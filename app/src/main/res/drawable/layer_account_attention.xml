@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <inset android:drawable="@drawable/svg_account_icon"/>
+    </item>
+
+    <item>
+        <inset android:drawable="@drawable/svg_icon_attention"
+            android:insetLeft="6dip"
+            android:insetBottom="6dip" />
+    </item>
+</layer-list>

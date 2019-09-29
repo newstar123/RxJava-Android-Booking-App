@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Qorum</string>
+    <string name="geo_api_key">"AIzaSyDch9p5Xem6KHyIw6Fj8dxdzjvkn5mFJE0"</string>
+
+
+    <string name="menu_settings">Settings</string>
+    <string name="closing_tab">Closing Tab</string>
+
+    <string name="route_error">Could not load Uber for selected route. Please check route points.</string>
+    <string name="error_no_first_name">Please enter your first name.\n</string>
+    <string name="error_no_last_name">Please enter your last name.\n</string>
+    <string name="error_no_photo">Please choose your photo.</string>
+    <string name="error_no_gender">Please choose a gender.\n</string>
+    <string name="error_no_password">Please enter a password.\n</string>
+    <string name="error_no_birthday">Please let us know your birth date.\n</string>
+    <string name="error_no_phone">Please let us know your phone number.\n</string>
+    <string name="error_bad_email">Please enter your valid email address.\n</string>
+    <string name="error_email_in_use">That email address is already in use.</string>
+    <string name="error_age_not_valid">We could not log you in:\nYou can\'t log in to this app or website because you do not meet the requirements for country, age or other criteria</string>
+    <string name="error_invalid_credentials">That password does not match that email address.</string>
+    <string name="error_location_rationale">Location permissions are required for Qorum.</string>
+    <string name="error_bluetooth_rationale">Bluetooth permissions are required for Qorum.</string>
+    <string name="error_bluetooth_not_available">Bluetooth module hasn\'t been detected on your device. The function of the auto-open tab will be run with the GPS-module.</string>
+    <string name="error_bluetooth_not_enabled">Please, enable Bluetooth access</string>
+    <string name="enable_bluetooth_screen_message">Enable Bluetooth, so Qorum can automatically open your tab when you enter the venue and close your tab when you leave.</string>
+    <string name="error_location_denied">Sorry, this app cannot be used without the Location permission.</string>
+
+    <string name="error_camera_rationale">The camera permission is necessary to take your picture.</string>
+    <string name="error_storage_rationale">Reading from the external storage is necessary to retrieve access your new image.</string>
+    <string name="error_camera_denied">Unable to take your picture without access to the camera.</string>
+
+    <string name="error_no_drinks">How many drinks did you have?\n</string>
+    <string name="error_no_rating">Please press thumbs up or thumbs down.\n</string>
+    <string name="validation_error">Validation failed.\n</string>
+    <string name="server_error">Unknown error</string>
+    <string name="error_no_share_url">Sorry, there are currently no available referral links.</string>
+
+    <string name="internet_error">Your device is not connected to the internet. Please check your cell phone signal and/or wi-fi connection to continue using Qorum.</string>
+    <string name="promotion_mark">USING QORUM DOES NOT GUARANTEE\nADMISSION TO VENUE</string>
+
+    <string name="add_profile_picture_TAB_updating"> Add a profile picture so the bartenders can update your tab. </string>
+    <string name="add_picture">ADD PICTURE</string>
+    <string name="something_wrong">Something went wrong!</string>
+    <string name="something_wrong_message">We were unable to open your tab due to a POS system issue. Please wait while we try again.</string>
+    <string name="something_wrong_notification">We were unable to open your tab due to a POS\nsystem issue.</string>
+    <string name="beacon_auto_open_tab" formatted="false">You\’ve been automatically checked into %s.</string>
+    <string name="beacon_auto_close_tab">Your tab has been closed. Please rate your experience in the Qorum app.</string>
+
+    <string name="word_distance">DISTANCE</string>
+    <string name="word_nearby">NEARBY</string>
+    <string name="word_tips">INSIDE TIPS</string>
+    <string name="word_features">FEATURES</string>
+    <string name="word_hours">HOURS</string>
+    <string name="word_name">NAME</string>
+    <string name="word_discount">DISCOUNT</string>
+    <string name="word_off">\u0020OFF</string>
+    <string name="word_map">Map</string>
+    <string name="word_list">List</string>
+    <string name="word_checkin">Check in</string>
+    <string name="word_male">Male</string>
+    <string name="word_female">Female</string>
+    <string name="word_closed">Closed</string>
+    <string name="word_am">AM</string>
+    <string name="word_pm">PM</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="word_login">Login</string>
+    <string name="get_code">Get Code</string>
+    <string name="update_password">Update Password</string>
+
+    <string name="hint_email_address">Email Address</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_code">Code</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_firstName">Name</string>
+    <string name="hint_lastName">Last Name</string>
+    <string name="hint_birthdate">Birthday</string>
+    <string name="hint_destination_address">Enter destination address</string>
+    <string name="hint_zip_code">ZIP Code</string>
+    <string name="hint_age">Age</string>
+    <string name="hint_gender">Gender</string>
+
+    <string name="title_choose_gender">Gender</string>
+    <string name="button_sign_up_with_email">Sign up with email</string>
+    <string name="button_submit">SUBMIT</string>
+    <string name="button_share_love">SHARE THE LOVE</string>
+    <string name="button_share_email">SHARE EMAIL</string>
+    <string name="change_email_button">CHANGE EMAIL</string>
+    <string name="location_reason_button">UPDATE MY SETTINGS</string>
+
+
+    <string name="title_please_correct">Please correct:</string>
+    <string name="title_fill_in_details">Complete Profile</string>
+    <string name="phrase_log_in">Log in</string>
+    <string name="phrase_already_signed_up">Already Signed up?</string>
+
+    <string name="invalid_email_address">Please enter a valid email address</string>
+    <string name="empty_email_address">Please enter your email address</string>
+    <string name="invalid_phone_number">Please enter a valid phone number</string>
+    <string name="empty_phone_number">Please enter your phone number</string>
+    <string name="invalid_code">Please enter a valid code</string>
+    <string name="wrong_code">Invalid Verification Code</string>
+    <string name="verify_account_by_phone">Help us keep your account and Qorum safe by verifying your phone number:</string>
+    <string name="verify_account_by_email">Help us keep your account and Qorum safe by verifying your email address:</string>
+    <string name="verify_code_text">Enter Your Verification Code</string>
+
+    <string name="menu_account">Account</string>
+    <string name="menu_support">24/7 Support</string>
+    <string name="menu_invite">Free Drinks</string>
+    <string name="menu_payment">Payment</string>
+    <string name="menu_logout">Log Out</string>
+    <string name="navigation_logout">LOG OUT</string>
+    <string name="default_payment">Default payment card</string>
+    <string name="word_or_caps">OR</string>
+    <string name="log_in">Log in</string>
+    <string name="already_signed_up">Already Signed up?</string>
+    <string name="need_profile_title">If we can\'t see you, we can\'t serve you</string>
+    <string name="need_payment_message">Please add a credit card to open your bar tab and enjoy your Qorum discount.</string>
+    <string name="close_tab_without_card_error">Error. Application need your credit card\'s data to close current tab.</string>
+    <string name="need_profile_message">Qorum needs to capture a clear profile picture so that our bars can identify you and properly apply your discount.</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password">Password Reset</string>
+    <string name="reset_instructions">
+        Enter your email address and new password. Press the Get Code button then check your email
+        for a Code from us. Enter it into the Code prompt then press the Update Password button.
+    </string>
+
+    <string name="oh_no">Oh no!</string>
+    <string name="location_blocker_text">Qorum isn\'t available at your location quite yet. Share your email, and we\'ll let you know when we go live in your city.</string>
+
+    <string name="facebook_app_id">1670534059850817</string>
+    <string name="facebook_login_error">Facebook Login Error</string>
+    <string name="menu_order_by_app_not_available">Qorum doesn\'t do in-app ordering. We want you to have fun and talk to strangers - not order from your little screen.</string>
+    <string name="view_menu">VIEW MENU</string>
+
+
+    <!-- Zendesk -->
+    <string name="zendesk_url">https://qorumhelp.zendesk.com</string>
+    <string name="zendesk_app_id">D566f42a14871863cb1a3acb23536b15c59e3a0556f62ea9</string>
+    <string name="zendesk_client_id">Mobile_sdk_client_1a4d341fa6a64876b3d6</string>
+    <string name="zendest_name_subject">Give the name of your subject</string>
+
+    <string name="feature_fullbar">Full Bar</string>
+    <string name="feature_beerandwineonly">Beer / Wine Only</string>
+    <string name="feature_mixology">Mixology</string>
+    <string name="feature_microbrewery">Microbrewery</string>
+    <string name="feature_draftbeer">Draft Beer</string>
+    <string name="feature_craftbeers">Craft Beers</string>
+    <string name="feature_vastwinelist">Vast Wine List</string>
+    <string name="feature_extensiveselection" formatted="false">Extensive %1$s Selection</string>
+    <string name="feature_servesfood">Serves Food</string>
+    <string name="feature_brunch">Brunch</string>
+    <string name="feature_rooftop">Rooftop</string>
+    <string name="feature_pooltables">Pool Tables</string>
+    <string name="feature_karaoke">Karaoke</string>
+    <string name="feature_bigscreentvs" formatted="false">%1$s Big Screen TVs</string>
+    <string name="feature_showssports">Plays Sports Games</string>
+    <string name="feature_fireplace">Fireplace</string>
+    <string name="feature_livedj">Live DJ</string>
+    <string name="feature_livemusic">Live Music</string>
+    <string name="feature_outdoorseating">Outdoor Seating</string>
+    <string name="feature_smokingarea">Smoking Area</string>
+    <string name="feature_impressiveviews">Impressive Views</string>
+    <string name="feature_sunsets">Sunset Views</string>
+    <string name="feature_oceanfront">Oceanfront</string>
+    <string name="feature_singlesscene">Singles Scene</string>
+    <string name="feature_gayscene">Gay Scene</string>
+    <string name="feature_lesbianscene">Lesbian Scene</string>
+    <string name="feature_maxoccupancy" formatted="false">%1$s Maximum Occupancy</string>
+    <string name="feature_wifi">WiFi</string>
+
+    <string name="tip_avgdrinkprice" formatted="false"><![CDATA[<font color="#00b2de"><b>$%1$s</b></font> Average Drink Price]]></string>
+    <string name="tip_avgguestage" formatted="false"><![CDATA[<font color="#00b2de"><b>%1$s</b></font> Average Guest Age]]></string>
+    <string name="tip_avgwaittime" formatted="false"><![CDATA[<font color="#00b2de"><b>%1$s</b></font> Average Wait Time]]></string>
+    <string name="tip_dresscodecasual">Dress Code: Casual</string>
+    <string name="tip_dresscodesmartcasual">Dress Code: Smart Casual</string>
+    <string name="tip_dresscodetrendy">Dress Code: Trendy</string>
+    <string name="tip_dresscodeupscale">Dress Code: Upscale</string>
+    <string name="tip_cashonly">Cash Only</string>
+    <string name="tip_energylevelsubdued">Energy Level: Subdued</string>
+    <string name="tip_energylevellively">Energy Level: Lively</string>
+    <string name="tip_energylevelrowdy">Energy Level: Rowdy</string>
+    <string name="tip_music" formatted="false">Music: %1$s</string>
+    <string name="tip_whattodrink">WHAT TO DRINK</string>
+    <string name="tip_crowd">HOW\'S THE CROWD</string>
+    <string name="tip_freestyle" formatted="false">%1$s</string>
+    <string name="discover_tour">Discover Great Bars</string>
+    <string name="find_spot" >Find the perfect spot with curated bars and expert reviews.</string>
+
+    <string name="day_sunday">Sunday</string>
+    <string name="day_monday">Monday</string>
+    <string name="day_tuesday">Tuesday</string>
+    <string name="day_wednesday">Wednesday</string>
+    <string name="day_thursday">Thursday</string>
+    <string name="day_friday">Friday</string>
+    <string name="day_saturday">Saturday</string>
+    <string name="thanks_for_visiting">Thanks for visiting</string>
+    <string name="Qorum_HQ">Qorum HQ</string>
+    <string name="drinks_ordered">DRINKS ORDERED</string>
+    <string name="share_the_love">Share the love. Give free drinks</string>
+    <string name="optional_comments">Optional Comments</string>
+    <string name="word_feedback">FEEDBACK</string>
+    <string name="word_submit">Submit</string>
+    <string name="submit_code_text">submit verification code in</string>
+    <string name="home_city_patron_detail">HOME CITY</string>
+    <string name="home_city">Home city</string>
+    <string name="age_patron_detail">AGE</string>
+    <string name="payment_title">Payment Method</string>
+    <string name="share_drinks_title">Share the love.\n Give free drinks.</string>
+    <string name="share_drinks_message">Invite 3 friends to join Qorum.\nEnjoy a free drink at any Qorum bar\nwhen they use the app. Cheers!</string>
+    <string name="share_drinks_line4">($10 maximum - let\'s no get carried away)</string>
+    <string name="share_drinks_your_code">Your code:</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="share_drinks_terms_and_cond">Terms &amp; Conditions</string>
+    <string name="share_drinks_invites_completed">Invites Accepted</string>
+    <string name="share_drinks_free_drinks_waiting">Free Drinks Waiting</string>
+    <string name="share_drinks_friends_checked_in">Friends Who Checked In</string>
+    <string name="checkout_thanks_for_visiting">Thanks for visiting</string>
+    <string name="view_checkout_list_dash">-</string>
+    <string name="checkout_close_tab">CLOSE TAB</string>
+    <string name="close_tab">Close Tab</string>
+    <string name="checkout_ridesafe">RIDESAFE</string>
+    <string name="checkout_your_order">YOUR ORDER</string>
+    <string name="checkout_total">Total</string>
+    <string name="feedback_drinks_ordered">DRINKS ORDERED</string>
+    <string name="feedback_share_love">SHARE THE LOVE</string>
+    <string name="feedback_feedback">FEEDBACK</string>
+    <string name="feedback_optional_comments">Optional comments</string>
+    <string name="feedback_rate_your_experience">Rate Your Experience</string>
+    <string name="scan_your_card">Scan Your Card</string>
+    <string name="scan_was_canceled">Payment card scan was canceled</string>
+    <string name="need_payment_title">Check In?</string>
+    <string name="sign_up_with_email">SIGN UP WITH EMAIL</string>
+    <string name="word_search">Search</string>
+    <string name="word_search_ellipsis">Search...</string>
+    <string name="continue_as_guest">Continue as Guest</string>
+    <string name="ride_type_description_template" formatted="false"><![CDATA[<b>%s</b><br><small>%s</small>]]></string>
+    <string name="ride_type_description_template_discount" formatted="false"><![CDATA[<b>%s</b><br><small>%s </small><strike><small><font color="#777880">%s</font></small></strike>]]></string>
+    <string name="settings_title">Settings</string>
+    <string name="menu_title">Menu</string>
+    <string name="update">UPDATE</string>
+    <string name="pre_update">Enter data to update</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="save_account">Save Account</string>
+    <string name="gift">Gift</string>
+    <string name="next">NEXT</string>
+    <string name="tips_title">Select Tip</string>
+    <string name="tab_sub_total_title">Tab Subtotal</string>
+    <string name="free_drink_credit">FREE DRINK CREDIT</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="tax_ca_10">Tax</string>
+    <string name="tax_with_dots">Tax: </string>
+    <string name="total">Total</string>
+    <string name="total_due">Total Due</string>
+    <string name="servedFrom">"SERVED FROM:"</string>
+    <string name="requesting">REQUESTING</string>
+    <string name="destination">Destination</string>
+    <string name="request_type" formatted="false">REQUEST %s</string>
+    <string name="you_have_saved" formatted="false"><![CDATA[YOU SAVED: <b>$%s</b>]]></string>
+    <string name="menu_title_mayus">MENU</string>
+    <string name="masked_credit_card">\u2217\u2217\u2217\u2217 \u2217\u2217\u2217\u2217 \u2217\u2217\u2217\u2217 %1$s</string>
+    <string name="add_payment_title">Add Payment Info</string>
+
+    <string name="add">Add</string>
+    <string name="uber_required_title">Uber required</string>
+    <string name="uber_required_message">You need the Uber app to proceed. Do you want to download it?</string>
+    <string name="uber_app_url">https://m.uber.com/sign-up?client_id=kr_FY1h1pQEzg1srUxSfjqDY_fRPtvgh</string>
+    <string name="free">FREE</string>
+
+    <string name="info_account_verification">Before you invite your friends please verify your account.</string>
+    <string name="phone_verification">VERIFY ACCOUNT BY PHONE</string>
+    <string name="mail_verification">VERIFY ACCOUNT BY MAIL</string>
+
+    <string name="next_tutorial">NEXT</string>
+    <string name="coach_mark_freeride_text">Unlock a free Uber after your\n third round of drinks.</string>
+    <string name="unlock_uber">Unlock a free Uber</string>
+
+    <string name="open_tab">OPEN TAB</string>
+    <string name="open_tab_small">Open Tab?</string>
+    <string name="view_tab">VIEW TAB</string>
+
+    <string name="connect_facebook" formatted="false"><![CDATA[CONNECT WITH <font><b>FACEBOOK</b></font>]]></string>
+    <string name="visibility_facebook" formatted="false"><![CDATA[TURN <font><b>ON</b></font> VISIBILITY to see who’s there]]></string>
+
+    <string name="origin">Origin</string>
+    <string name="current_location">Current location</string>
+    <string name="dropoff">Dropoff:</string>
+    <string name="pickup">Pickup:</string>
+    <string name="see_who_apos_s_here">See Who\'s Here</string>
+
+    <string name="view_policy">View Privacy Policy</string>
+
+    <string name="close_tab_message">Hit \"close tab\" to pay, or simply walk out to automatically close your tab. You may also close out using cash or with another card.</string>
+    <string name="pay_for_close_tab_message">The user can only pay by bartender with cash or card to close his tab.</string>
+    <string name="too_far">TOO FAR</string>
+    <string name="too_far_for_call_uber">Too far for Uber ordering.</string>
+    <string name="YOU_ARE_IN">You are in %1$s. Check in now</string>
+    <string name="confirmation">CONFIRMATION</string>
+    <string name="pickup_time">pickup time is approximately %1$d mins</string>
+    <string name="account_type">com.qorum.android</string>
+
+    <string name="sign_up">LOGIN WITH </string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="sign_up_email">Sign up with Email</string>
+    <string name="sign_in_facebook">Facebook login</string>
+    <string name="sign_in_email">Email log in</string>
+    <string name="payment_info_add_card">ADD CARD</string>
+    <string name="should_not_empty">cannot be empty</string>
+    <string name="letters_and_digits">Only letters, digits, \'-\' and \'_\' are supported.</string>
+    <string name="enable">ENABLE</string>
+    <string name="permission_location_reason">The application needs location access for the bar searching</string>
+    <string name="permission_call_phone_reason">The application needs access to create phone calls for call up to the bar</string>
+    <string name="retry">Retry</string>
+    <string name="request_error">An error was happened</string>
+    <string name="permission_access_reason">The application needs account and contacts access for managing profiles</string>
+
+    <string name="support_address">support@qorum.com</string>
+    <string name="support_title">Qorum Support</string>
+    <string name="support_message">Hi Qorum Team!</string>
+    <string name="guest_access_tab">A guest can\'t open tab</string>
+    <string name="guest_access_uber">A guest can\'t call Uber</string>
+
+    <string name="check_required_fields">Please, check required fields.</string>
+    <string name="please_check_your_email">Please, check your email.</string>
+    <string name="camera">Camera</string>
+    <string name="add_profile_photo">Add a new profile photo</string>
+    <string name="import_from_facebook">Import from Facebook</string>
+    <string name="choose_from_library">Choose from library</string>
+    <string name="take_photo">Take a photo</string>
+    <string name="gallery">Gallery</string>
+    <string name="ok">OK</string>
+    <string name="change_payment_method">Change Payment</string>
+    <string name="continue_word">Continue</string>
+    <string name="continue_logout">Do you want to continue logout?</string>
+    <string name="default_payment_question">Do you want to choose this card as default?</string>
+    <string name="user_id_settings">user_id_settings</string>
+    <string name="invite_friend">Invite a Friend</string>
+    <string name="payment_card_number">Card number</string>
+    <string name="expiration_date">Exp. Date</string>
+    <string name="cvv">CVV</string>
+    <string name="card_number_not_valid">Invalid payment card number</string>
+    <string name="invalid_security_code">Invalid security code</string>
+    <string name="invalid_zip_code">Invalid ZIP code</string>
+    <string name="invalid_expired_date">Payment card was expired</string>
+    <string name="capture">Capture</string>
+    <string name="value_percent_off" formatted="false">%s%% OFF</string>
+    <string name="value_miles_to_neighborhood" formatted="false">%s miles - %s</string>
+    <string name="value_space_value_percent" formatted="false">%s %s%%</string>
+    <string name="value_percent" formatted="false">%s%s</string>
+    <string name="value_percent_parenthesis" formatted="false">%2f</string>
+
+    <string name="tips_dash_value_percent">Tip (based on subtotal) </string>
+    <string name="qorum_dash_value_percent_off" formatted="false">QORUM - %s%% OFF </string>
+    <string name="qorum_dash_value_percent_dots" formatted="false">QORUM - %s%%*:</string>
+
+    <string name="qorum_drink_discounts">*To redeem Qorum drink discounts, you must pay\nusing the Qorum app.</string>
+    <string name="no_orders">Nothing ordered yet…</string>
+
+    <string name="vendor_address_minimal_form" formatted="false">%s, %s …</string>
+    <string name="vendor_address_short_form" formatted="false">%s, %s %s</string>
+    <string name="vendor_address_normal_form" formatted="false">%s, %s, %s %s</string>
+    <string name="vendor_address_two_rows_form" formatted="false">%s, %s,\n%s %s</string>
+    <string name="transition_name_bar_view_container">bar_view_container</string>
+    <string name="transition_name_bar_name">bar_name</string>
+    <string name="transition_name_bar_type">bar_type</string>
+    <string name="transition_name_bar_discount">bar_discount</string>
+    <string name="transition_name_bar_route">bar_route</string>
+    <string name="transition_name_bar_hint_view">bar_hint_view</string>
+    <string name="bar_detail_slogan_value_form" formatted="false">\"%s\"</string>
+    <string name="hidden_card_template" formatted="false">**** **** **** %s</string>
+    <string name="hidden_change_card_template" formatted="false">*%s</string>
+    <string name="dollars_value_max" formatted="false">%1$s MAX</string>
+    <string name="dollars_value" formatted="false">$%s</string>
+    <string name="dollars_value_with_two_sign" formatted="false"> $%.2f</string>
+    <string name="discount_value_with_two_sign" formatted="false"> -$%.2f</string>
+    <string name="bar_sub_menu_hint">Please place order with your server. We cannot take orders through the app at this time.</string>
+    <string name="why_we_like_it">Why we like it</string>
+    <string name="guest_mode">Guest mode</string>
+    <string name="phone">Phone</string>
+    <string name="uber">Uber</string>
+    <string name="undo">UNDO</string>
+    <string name="payment_card_deleted">The payment card has been deleted</string>
+    <string name="capacity_template" formatted="false">1 - %s</string>
+    <string name="pickup_estimate_template" formatted="false">%s\nMIN</string>
+    <string name="value_dash_value" formatted="false">%s - %s</string>
+    <string name="value_space_value" formatted="false">%s %s</string>
+    <string name="minutes_with_coma" formatted="false">%d MIN,</string>
+    <plurals name="plural_minutes_caps">
+        <item quantity="one">%d MIN</item>
+        <item quantity="few">%d MINS</item>
+        <item quantity="other">%d MINS</item>
+    </plurals>
+    <plurals name="plural_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="few">%d minutes</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+
+    <string name="calendar_day">DD</string>
+    <string name="calendar_month">MM</string>
+    <string name="calendar_year">YYYY</string>
+
+    <string name="an_error_has_happened">An error has happened</string>
+    <string name="something_progress">Something wrong with progress</string>
+    <string name="cancel">CANCEL</string>
+    <string name="address_value_saved" formatted="false">Address \"%s\" successfully saved to clipboard.</string>
+    <string name="split_tab">Split tab</string>
+    <string name="my_tab">My Tab</string>
+    <string name="default_tip_percent">20</string>
+    <string name="buy_uber_rounds" formatted="false">Buy %s rounds, get $%s off Uber</string>
+    <string name="more_uber_rounds" formatted="false">%s more rounds, get free Uber</string>
+    <string name="max_free_uber" formatted="false">Free Uber ($%s max)</string>
+
+    <string name="close_tab_without_uber"><u>No thanks - I\'ve got it covered.</u></string>
+    <string name="close_tab_propose">You\'re all set. Thank you - have a great night.\nGet home safely by booking an UBER!</string>
+    <string name="tab_auto_closed">You\'re all set. Thank you - have a great night. Get home safely by booking an Uber!</string>
+
+    <string name="edit">Edit</string>
+    <string name="total_value" formatted="false">Total: $%.2f</string>
+    <string name="total_with_dots" formatted="false">Total:</string>
+    <string name="tab_total" formatted="false">Tab total $%.2f</string>
+    <string name="tab_total_with_dots" formatted="false">Tab total: $%.2f</string>
+    <string name="come_on_in">Come on in!</string>
+    <string name="check_in_splash_text">Headsup: We preauthorized your card to\nmake sure it works, but you will\nonly be charged for your actual tab\namount.</string>
+    <string name="now">\u00B7 now</string>
+    <string name="close_other_tab">Close Other Tab?</string>
+    <string name="you_must_close_other_tab">You must close out your open tab to start a new one.</string>
+    <string name="notification_rounds" formatted="false">, ROUND: %s</string>
+    <string name="rounds" formatted="false">ROUND: %s</string>
+    <string name="tip" formatted="false">Tip $%.2f</string>
+    <string name="tip_with_dots">Tip:  </string>
+    <string name="custom">Custom</string>
+    <string name="done">Done</string>
+    <string name="profile_success_updated">Profile successfully updated</string>
+    <string name="tip_error" formatted="false">%s%% minimum required</string>
+    <string name="summary_loading_error">Tab`s data loading error. Please try again.</string>
+    <string name="twitter_not_installed">Twitter is not installed</string>
+    <string name="check_out_bar_with_qorum" formatted="false">"Check out %s with Qorum"</string>
+    <string name="closes_at" formatted="false">CLOSES AT %s</string>
+    <string name="opens_at" formatted="false">OPENS AT %s</string>
+
+    <string name="close_tab_conflict_error">The current tab is updating.\nPlease, try again in a minute.</string>
+    <string name="tab_update_conflict_message">Your tab is being updated.\nPlease try again in a minute.</string>
+
+    <string name="facebook_visibility">Facebook Visibility</string>
+    <string name="facebook_visibility_on_message">You have deactivated this functionality within 24 hours, the change will not be visible until those 24 hours past. Are you sure to make the changes?</string>
+    <string name="facebook_visibility_off_message">After turning off Facebook Visibility, you must wait 24 hours after turning it back on before you can \"See who’s there\" again.</string>
+
+    <string name="auto_open_tab">Auto Open Tab</string>
+    <string name="invite_to_split">Invite to Split</string>
+    <string name="you_will_pay">You will Pay</string>
+    <string name="send_invite">Send Invite</string>
+    <string name="enter_name_phone">Enter Name or Phone Number</string>
+    <string name="sms">sms</string>
+    <string name="edit_fields_from_facebook">You cannot edit fields from facebook</string>
+    <string name="confirm_pickup">CONFIRM PICKUP</string>
+    <string name="confirm_your_pickup_at">Confirm your pickup at</string>
+    <string name="please_select_destination">Please, select the destination point</string>
+    <string name="beacon_service_run_title">Near vendors scanning is run</string>
+    <string name="beacon_service_run_message">App is scanning near vendors right now</string>
+    <string name="stop_service">STOP SERVICE</string>
+    <string name="scanning_sevice_stopped">Scanning service is stopped.</string>
+    <string name="pleace_restart_beacon_service">Please restart it for the search near vendors.</string>
+    <string name="restart">Restart</string>
+    <string name="fare">Fare</string>
+    <string name="capacity">Capacity</string>
+    <string name="latest_arrival">Latest Arrival</string>
+    <string name="close">CLOSE</string>
+    <string name="confirm_seats">CONFIRM SEATS</string>
+    <string name="how_many_seats">How many seats do you need?</string>
+    <string name="pool">POOL</string>
+    <string name="bar_detail_photo_transition">Bar_Detail_Photo_Transition</string>
+    <string name="bar_detail_type_indicator_transition">Bar_Detail_Type_Indicator_Transition</string>
+    <string name="bar_detail_type_transition">Bar_Detail_Type_Transition</string>
+    <string name="bar_detail_name_transition">Bar_Detail_Name_Transition</string>
+    <string name="bar_detail_distance_transition">Bar_Detail_Distance_Transition</string>
+    <string name="bar_detail_route_transition">Bar_Detail_Route_Transition</string>
+    <string name="bar_detail_discount_transition">Bar_Detail_Discount_Transition</string>
+    <string name="promo_error_loading">Something went wrong loading your promotion, would you still like to continue?</string>
+    <string name="warning">Warning</string>
+    <string name="yes_continue">Yes, continue</string>
+    <string name="yes">Yes</string>
+    <string name="no_cancel">No, cancel</string>
+    <string name="there_word">THERE</string>
+    <string name="to_the_venue" formatted="false">TO THE VENUE:\n%s</string>
+    <string name="want_to_open_tab">Do you want to open a tab?</string>
+    <string name="profile_coach_message">Be sure to keep your Account and\nPayment up to date. Nothing like\nan expired credit card to kill your vibe.</string>
+    <string name="facebook_login_coach_message">Connect with Facebook to see who’s there\nbefore you go. You can always turn off\nyour own FB Visibility in Settings.</string>
+    <string name="got_it">GOT IT</string>
+    <string name="got_it_with_exclamation_mark">GOT IT!</string>
+    <string name="first_check_in_coach_message">Be sure to keep your bluetooth\non so we can manage your tab.\nWe do not want to drain your\nbattery by using GPS.</string>
+    <string name="tab_coach_mark_message">Unlock a free Uber 90 minutes after\nyou order your first drink.</string>
+    <string name="fb_visibility_period_error">Facebook visibility was changed less day ago.\nPlease try again later.</string>
+    <string name="no_email_client_error">There are no email clients installed.</string>
+    <string name="page_from_size" formatted="false">%s from %s</string>
+    <string name="word_video">Video</string>
+    <string name="phone_number_error">Please check your phone number.</string>
+    <string name="country_codes_error">Country codes loading error</string>
+    <string name="broken_video">Video link is broken.</string>
+    <string name="terms_message">Terms and Conditions are a set of rules and guidelines that a user must agree to in order to use your website or mobile app.
+        It acts as a legal contract between you (the company) who has the website or mobile app and the user who access your website and mobile app.\n\n
+        It\'s up to you to set the rules and guidelines that the user must agree to. You can think of your Terms and Conditions agreement as the legal agreement
+        where you maintain your rights to exclude users from your app in the event that they abuse your app, and where you maintain your legal rights against
+        potential app abusers, and so on.\n\n Terms and Conditions are also known as Terms of Service or Terms of Use.\n\n This type of legal agreement
+        can be used for both your website and your mobile app. It’s not required (it’s not recommended actually) to have separate Terms and Conditions
+        agreements: one for your website and one for your mobile app.</string>
+    <string name="venue_closed">VENUE CLOSED</string>
+    <string name="place_log_in">You must log in via Facebook to\nopen a tab.</string>
+    <string name="tab_closed">Tab Closed</string>
+    <string name="close_tab_error_message">Your Tab was not closed. Please, close the Tab manually.</string>
+    <string name="close_tab_payment_error_message">Your Tab was not closed. Something went wrong. Please, close the Tab manually.</string>
+    <string name="tab_timer_title" formatted="false"><![CDATA[<font color="#ffffff">Hang out at the venue for another %s to unlock a free Uber ride. </font><font color="#989898"><i>Heads up: the timer resets if you leave the bar, so stay put</i></font>]]></string>
+    <string name="tab_timer_stop_title" formatted="false"><![CDATA[<font color="#ffffff">You’ve unlocked a free Uber ride. Click below<br>to redeem. </font><font color="#989898"><i>$%s max. Redeem by 4am</i></font>]]></string>
+    <string name="tab_timer_notification_title" formatted="false"><![CDATA[<font color="#000000">Hang out at the venue for another %s to unlock a free Uber ride. </font><font color="#989898"><i>Heads up: the timer resets if you leave the bar, so stay put</i></font>]]></string>
+    <string name="tab_timer_stop_notification_title" formatted="false"><![CDATA[<font color="#000000">You’ve unlocked a free Uber ride. Click below<br>to redeem. </font><font color="#989898"><i>$%s max. Redeem by 4am</i></font>]]></string>
+    <string name="no_departure_position">Please, add departure address.</string>
+    <string name="no_destination_position">Please, add destination address.</string>
+    <string name="open_tab_dialog_title">Check in?</string>
+    <string name="add_card">ADD CARD</string>
+    <string name="tab_failed_to_open">Tab Failed to Open</string>
+    <string name="please_change_payment_card">Please change your default payment method or add another payment method to open your tab.</string>
+    <string name="change_payment">Change Payment</string>
+    <string name="free_ride_is_unavailable">Free Uber ride is unavailable.</string>
+    <string name="pre_auth_founds_error">Your default payment method for your\norder has been declined. Please change your default\npayment method or settle your tab at the bar.</string>
+    <string name="initial_check_age_title">You must be at least 21 years old\nto join Qorum. Please enter your date\nof birth below.</string>
+    <string name="initial_check_age_reason">Your DOB must match your ID\nat Qorum bars.</string>
+    <string name="let_me_in">LET ME IN</string>
+    <string name="slash">/</string>
+    <string name="please_check_birth_date">Please, choose your birth date.</string>
+    <string name="initial_check_age_error">We’re sorry, but you’re not\nallowed to use Qorum until\nyou are of legal drinking age.</string>
+    <string name="okay">OKAY</string>
+    <string name="initial_location_reason">Qorum uses your current location\nto find bars near you, access your tab,\nand order rides.</string>
+    <string name="location_reason_title">Where you at?</string>
+    <string name="location_reason_message">Qorum needs to know your location in\norder to suggest bars near you, access\nyour bar tab, and order your rides.</string>
+    <string name="counting">Counting in progress</string>
+    <string name="start_player_time_line">0:00</string>
+    <string name="privacy_policy">http://www.qorum.com/privacy-policy-tos</string>
+    <string name="time_format" formatted="false">%d:%02d</string>
+    <string name="tab_time_format" formatted="false">%02d:%02d</string>
+    <string name="remaining_for_uber" formatted="false"><![CDATA[remaining for <b>UBER</b>]]></string>
+    <string name="_18">18%</string>
+    <string name="_20">20%</string>
+    <string name="_25">25%</string>
+
+    <string name="min_case">MIN 18%</string>
+    <string name="validation_min_case">($%s)</string>
+    <string name="validation_custom_tips">$%s</string>
+    <string name="validation_min_space">%s</string>
+
+
+    <string name="accept">Accept</string>
+    <string name="country_code_prefix" formatted="false">+%s</string>
+    <string name="re_send">Resend</string>
+    <string name="re_send_timer" formatted="false">Resend verification code in %s</string>
+    <string name="please_try_again">Please try again.</string>
+    <string name="refer_friends">Refer friends to get free Uber</string>
+
+    <string name="error">Error</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="allow">Allow</string>
+
+    <string name="oops_conflict_title">Oops - Hang tight while we solve this!</string>
+    <string name="tab_close_conflict_message">We were unable to close your tab because the bartender is currently updating it.\n\nPlease try again later or ask the bartender directly.</string>
+    <string name="tab_close_poss_message">We were unable to close your tab because terminal is not responding.\nPlease try again later or ask the bartender directly.</string>
+    <string name="auto_check_in_settings">Would you like to turn on auto-checkin to automatically open a tab when you\'re in the bar?</string>
+    
+    <string name="try_again">TRY AGAIN</string>
+    <string name="close_tab_payment_error">Oops… It appears your default payment method for your order has been declined.\n\nPlease change your default payment method or settle your tab at the bar.</string>
+    <string name="change_card">CHANGE CARD</string>
+    <string name="pay_with_cash">PAY WITH CASH</string>
+    <string name="verify_email">VERIFY EMAIL</string>
+    <string name="please_verify_email">Please verify your email address to receive your receipts</string>
+    <string name="verify_phone">VERIFY PHONE</string>
+    <string name="please_verify_phone">Please verify your phone before closing the Tab to keep your account and Qorum safe</string>
+    <string name="first_name">FirstName</string>
+    <string name="last_name">LastName</string>
+    <string name="birth_date">BirthDate</string>
+    <string name="gender">Gender</string>
+    <string name="mail">Mail</string>
+    <string name="number">Number</string>
+    <string name="re_enter_zip_code">RE-ENTER ZIP CODE</string>
+    <string name="brought_to_you_by_qorum">Brought to you by Qorum</string>
+
+    <string name="would_you_like_to_check_in" formatted="false">You\'ve been in range of %s. Would you like to check in?</string>
+    <string name="profile_verification">Profile verification</string>
+    <string name="ticket_not_found">Whoops - Looks like your tab was closed before you got to order anything.\nDo you want to open a new tab?</string>
+    <string name="ticket_closed_empty_error">Whoops! Looks like you didn\'t order anything. If you want to close out your tab, please see the bartender.</string>
+
+    <string name="when_you_order">When you order, tell your\n Bartender you have a Qorum tab.</string>
+
+    <string name="no_thanks">No Thanks</string>
+    <string name="checking_preconditions">Checking preconditions</string>
+    <string name="opening_tab">Opening Tab</string>
+    <string name="headsup_youve_exited_venue" formatted="false">Heads-up: You\'ve exited %s.</string>
+    <string name="re_enter_the_venue_message" formatted="false">You\'ve re-entered %s, so your tab is still open.</string>
+    <string name="re_enter_the_venue_warning" formatted="false">If you do not re-enter the Venue with %s minutes, your tab will be automatically closed.</string>
+    <string name="_3">3</string>
+    <string name="time_to_update">Time to Update!</string>
+    <string name="time_to_update_message">Looks like you\'ve got an out-dated version of the Qorum app.</string>
+    <string name="time_to_update_submessage">Please go to the app store and update to the latest version to get all the new features and bug fixes to keep your app running smoothly.</string>
+    <string name="update_qorum">Update Qorum</string>
+    <string name="sorry_no_results">Sorry, no results!</string>
+
+    <string name="request_uber">REQUEST UBER</string>
+    <string name="pending_email_verification">Pending email verification</string>
+    <string name="check_email_inbox">Please check your email inbox for the verification email from Qorum.
+        In the email, tap on the verification link to confirm your email address is correct. If you do not
+        wish to verify your email, you cannot open a tab via the Qorum app
+    </string>
+    <string name="closing_soon">Closing Soon!</string>
+    <string name="default_http_error_message">No server connection.\nWe already working on it.\nPlease, try again in a few minutes.</string>
+
+    <string name="parse_double_from_string">[^.0123456789]</string>
+    <string name="free_ride_coach_mark_message">Your Free Uber is available until 6am.\nJust press this button when you\'re\nready to request your ride.</string>
+    <string name="success_message_for_location_blocker">"Thanks!\nWe will let you know when Qorum is live in your area.</string>
+    <string name="average_drink_price_format" formatted="false">avgDrinkPrice=%.2f</string>
+
+    <string name="headsup_with_exclamation">Headsup!</string>
+    <string name="free_ride_already_added" formatted="false">You already unlocked a free Uber ride with your previous checkin. You do not need to wait %s minutes to redeem the existing free Uber ride. Simply press the "Free Uber" button on the bottom of the My Tab screen to redeem it when you\'re ready.</string>
+
+    <!-- Messages for 500+n POS system errors -->
+    <string name="pos_error_500_n_title">Oops!</string>
+    <string name="current_pos_error_500_1_6">There is an error with the POS system, leading to a 10-minute delay in updating your tab. Please try updating your tab in 10 minutes.</string>
+    <string name="current_pos_error_500_2">We\'re currently experiencing an issue with the POS system. When you\'re ready to close out your tab, please see the Bartender. Because of the inconvenience, you will receive a $10 Uber Promo Code via email.</string>
+    <string name="current_pos_error_500_3_4_5">We\'re currently experiencing an issue with the POS system. To close out your tab, please see the Bartender. Because of the inconvenience, you will receive a $10 Uber Promo Code via email.</string>
+    <string name="current_pos_error_500_7">We\'re currently experiencing an issue with the POS system. To open, update, and close out your tab, please see the Bartender. Because of the inconvenience, you will receive a $10 Uber Promo Code via email.</string>
+    <string name="pos_error_409_server_error">Please try again later or ask the bartender to check the POS system.</string>
+    <string name="pos_error_409_checkin_error">It looks like you might already have a tab open. Please try again later or ask the bartender directly.</string>
+    <string name="pos_threw_error">POS threw an unexpected error.</string>
+    <string name="request_failed_conflict">A request failed because of conflict.</string>
+    <string name="request_failed_conflict_dup">A request failed because of a conflict.</string>
+    <string name="could_not_check_in">Could not check you in</string>
+
+    <!-- QA Mode -->
+    <string name="qa_mode_menu_button">QA Mode</string>
+    <string name="qa_mode_menu_exit">Exit QA-mode</string>
+    <string name="qa_mode_environment">Environment</string>
+    <string name="qa_mode_background">Background</string>
+    <string name="qa_mode_log_title">Local logs</string>
+    <string name="qa_mode_three_dots">- … -</string>
+    <string name="qa_mode_logs_def_file_name">BACKGROUND_RANGING.txt</string>
+    <string name="qa_mode_logs_def_path">sdcard/</string>
+    <string name="qa_mode_logs_path">Path to file</string>
+    <string name="qa_mode_logs_file_name">File Name</string>
+    <string name="qa_mode_logs_clear">Clear logs</string>
+    <string name="qa_mode_logs_clear_success">Local logs were cleared.</string>
+    <string name="qa_mode_logs_clear_error">Local logs cleaning error.</string>
+    <string name="qa_mode_logs_save">Save</string>
+    <string name="qa_mode_logs_restore">Restore</string>
+    <string name="qa_mode_logs_declined">That new path is wrong. Logging declined!</string>
+    <string name="qa_mode_fake_location_venue">Fake venue location for auto-checkout by GPS</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="custom_location">Custom location</string>
+    <string name="current_location_for_fake_venue_position_message">The current coordinates of the device will be added as the coordinates of the venue in which the next tab will be opened.</string>
+    <string name="custom_location_for_fake_venue_position_message">Add the custom coordinates as the coordinates of the venue in which the next tab will be opened.</string>
+    <string name="qa_mode_checkout_distance_visibility">Tracking distance by GPS</string>
+    <string name="qa_mode_checkout_distance_visibility_msg">(show distance between device and venue locations)</string>
+    <string name="qa_mode_custom_environment">Custom environment</string>
+    <string name="apply">Apply</string>
+    <string name="attention">Attention</string>
+    <string name="qa_mode_custom_environment_message">To apply all changes:\nYou will be logged out from the current account.\nThe app will be restarted.</string>
+    <string name="qa_mode_restore_environment_message">To restore default server connection:\nYou will be logged out from the current account.\nThe app will be restarted.</string>
+    <string name="use_real_uber_api">Use real Uber API</string>
+    <string name="word_on">ON</string>
+    <string name="whoops">Whoops!</string>
+    <string name="tab_was_closed_empty">Looks like you didn\'t order anything. If you want to close out your tab, please see the bartender.</string>
+    <string name="tab_faild">Tab failed to open:</string>
+
+    <!-- QA Mode -->
+
+</resources>

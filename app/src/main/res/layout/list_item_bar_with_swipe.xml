@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.rambler.libs.swipe_layout.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar_item_swipe"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_height="@dimen/dip210"
+    android:layout_gravity="center_horizontal">
+
+    <include layout="@layout/list_item_bar"/>
+
+    <include layout="@layout/list_item_bar_right_swipe"/>
+
+</ru.rambler.libs.swipe_layout.SwipeLayout>

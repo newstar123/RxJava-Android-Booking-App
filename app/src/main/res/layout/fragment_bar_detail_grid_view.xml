@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/full_screen_grid_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bar_detail_photos_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dip4"
+        android:layout_marginStart="@dimen/dip4"
+        android:layout_marginLeft="@dimen/dip4"
+        android:layout_marginEnd="@dimen/dip4"
+        android:layout_marginRight="@dimen/dip4"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/market_name"
+        style="@style/text_16_white"
+        android:layout_width="match_parent"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dip10"
+        android:paddingBottom="@dimen/dip8"/>
+
+    <View style="@style/divider_1_5b606f"
+        android:layout_gravity="bottom"/>
+</FrameLayout>

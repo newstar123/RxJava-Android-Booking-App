@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/navigation_body"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/dip16"
+        android:paddingEnd="@dimen/dip16">
+
+        <RelativeLayout
+            android:id="@+id/account_root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/account_text"
+                android:text="@string/menu_account"
+                style="@style/CustomNavigationDrawerMenuText"/>
+
+            <View style="@style/CustomView" />
+
+            <Button style="@style/CustomNavigationDrawerMenuButton"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/support_root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/support_text"
+                android:text="@string/menu_support"
+                style="@style/CustomNavigationDrawerMenuText"/>
+
+            <View style="@style/CustomView" />
+
+            <Button style="@style/CustomNavigationDrawerMenuButton"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/payment_root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/payment_text"
+                android:text="@string/menu_payment"
+                style="@style/CustomNavigationDrawerMenuText" />
+
+            <View style="@style/CustomView" />
+
+            <Button style="@style/CustomNavigationDrawerMenuButton"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/settings_root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/settings_text"
+                android:text="@string/menu_settings"
+                style="@style/CustomNavigationDrawerMenuText"/>
+
+            <Button style="@style/CustomNavigationDrawerMenuButton"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/qa_mode_root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <View style="@style/CustomView"
+                android:layout_alignParentBottom="false"/>
+
+            <TextView
+                android:id="@+id/qa_mode_text"
+                android:text="@string/qa_mode_menu_button"
+                style="@style/CustomNavigationDrawerMenuText"/>
+
+            <Button style="@style/CustomNavigationDrawerMenuButton"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_verify_account"
+        android:visibility="gone"/>
+
+</FrameLayout>

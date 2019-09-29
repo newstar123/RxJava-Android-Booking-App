@@ -1,0 +1,80 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/order_pick_up_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/order_ride_information_section"
+        android:layout_marginStart="@dimen/dip12"
+        android:layout_marginTop="@dimen/dip8"
+        android:background="@null"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:inputType="textNoSuggestions"
+        android:drawablePadding="@dimen/dip14"
+        android:drawableStart="@drawable/inset_order_ride_address_name"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@android:color/white"
+        android:selectAllOnFocus="true"
+        android:textSize="@dimen/sp14"
+        android:visibility="gone"/>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/order_ride_type_pager_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip19"
+        android:layout_alignTop="@+id/order_ride_type_pager"
+        android:layout_marginTop="@dimen/dip3"
+        android:background="@android:color/transparent"
+        android:visibility="gone"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/order_ride_type_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip133"
+        android:layout_above="@+id/order_ride_commit_ride_type"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/order_ride_pool_title"
+        style="@style/wrap"
+        android:layout_alignTop="@+id/order_ride_information_section"
+        android:layout_marginStart="@dimen/dip16"
+        android:layout_marginTop="@dimen/dip16"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp22"
+        android:text="@string/pool"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/order_ride_pool_fare"
+        style="@style/wrap"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/order_ride_information_section"
+        android:layout_marginEnd="@dimen/dip16"
+        android:layout_marginTop="@dimen/dip16"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp22"
+        android:visibility="visible"/>
+
+    <View
+        android:id="@+id/order_ride_pool_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_below="@+id/order_ride_pool_fare"
+        android:layout_marginTop="@dimen/dip15"
+        android:background="@color/greyCode"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/order_ride_pool_question"
+        style="@style/wrap"
+        android:layout_below="@+id/order_ride_pool_divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dip50"
+        android:text="@string/how_many_seats"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp16"
+        android:visibility="gone"/>
+
+</merge>

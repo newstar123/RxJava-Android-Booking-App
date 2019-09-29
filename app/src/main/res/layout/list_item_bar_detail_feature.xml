@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dip44"
+    android:minHeight="@dimen/dip44"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/list_item_bar_detail_feature_icon"
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/dip20"
+        android:layout_height="@dimen/dip20"/>
+
+    <TextView
+        android:id="@+id/list_item_bar_detail_feature_name"
+        style="@style/text_16_white"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/color_828691"
+        android:layout_marginLeft="@dimen/dip33"
+        android:layout_marginStart="@dimen/dip33"/>
+
+</FrameLayout>

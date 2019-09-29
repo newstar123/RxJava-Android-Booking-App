@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/zendesk_screen_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/zendesk_screen_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:contentInsetLeft="@dimen/dip0"
+        android:contentInsetStart="@dimen/dip0"
+        app:contentInsetLeft="@dimen/dip0"
+        app:contentInsetStart="@dimen/dip0"
+        android:background="@android:color/transparent"/>
+
+    <EditText
+        android:id="@+id/zendesk_screen_subject_input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip50"
+        android:layout_marginStart="@dimen/dip25"
+        android:layout_marginEnd="@dimen/dip25"
+        android:layout_marginTop="@dimen/dip145"
+        android:gravity="center"
+        android:hint="@string/zendest_name_subject"
+        android:inputType="text"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textSize="@dimen/sp16"
+        android:fontFamily="@font/montserrat_regular"
+        android:background="@drawable/square_dark_blue"/>
+
+</RelativeLayout>

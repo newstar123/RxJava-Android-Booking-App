@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dip10"
+    android:background="@drawable/shape_qa_mode_card">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_16_white_montserrat_light"
+            android:textStyle="bold"
+            android:paddingEnd="@dimen/dip42"
+            android:text="@string/qa_mode_checkout_distance_visibility"/>
+
+        <TextView
+            style="@style/text_10_montserrat_medium_white"
+            android:textStyle="bold"
+            android:paddingEnd="@dimen/dip42"
+            android:layout_marginTop="@dimen/dip22"
+            android:text="@string/qa_mode_checkout_distance_visibility_msg"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/checkout_distance_switcher"
+            style="@style/wrap"
+            android:layout_gravity="end|center_vertical"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

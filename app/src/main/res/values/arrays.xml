@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="start_tour_titles">
+        <item>Discover Great Bars</item>
+        <item>Save on Drinks</item>
+        <item>Pay In-App</item>
+        <item>Catch a Free Ride</item>
+    </string-array>
+    <string-array name="start_tour_messages">
+        <item>Find the perfect spot with curated\n bars and expert reviews.</item>
+        <item>Never pay full price.\n Any drink, anytime.</item>
+        <item>Walk out to close out.\n Never leave your card behind.</item>
+        <item>Unlock a free Uber 60 minutes\n after your first round.</item>
+    </string-array>
+
+</resources>

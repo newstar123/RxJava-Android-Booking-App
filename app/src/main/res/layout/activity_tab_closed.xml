@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/close_tab_line_progress"
+            style="@style/general_material_progress_bar" />
+
+        <include
+            android:id="@+id/uber_call_button"
+            layout="@layout/include_tab_uber_button" />
+
+        <TextView
+            android:id="@+id/close_without_uber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip56"
+            android:layout_above="@id/uber_call_button"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center"
+            android:text="@string/close_tab_without_uber"
+            android:textColor="@color/color_50_ffffff"
+            android:textSize="@dimen/sp16" />
+
+        <View
+            style="@style/divider_1_5b606f"
+            android:layout_above="@id/close_without_uber"
+            android:layout_alignParentBottom="false"
+            android:layout_marginEnd="@dimen/dip16"
+            android:layout_marginStart="@dimen/dip16" />
+
+        <FrameLayout
+            android:id="@+id/tab_closed_home_button"
+            android:layout_width="@dimen/dip60"
+            android:layout_height="@dimen/dip60">
+
+            <ImageView
+                android:layout_width="@dimen/dip30"
+                android:layout_height="@dimen/dip30"
+                android:layout_gravity="center"
+                android:src="@drawable/inset_arrow_back" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_closed_message_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip141"
+            android:layout_above="@id/close_without_uber"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dip18">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="@string/tab_closed"
+                android:textColor="@android:color/white"
+                android:textSize="37sp" />
+
+            <TextView
+                android:id="@+id/tab_closed_message"
+                style="@style/text_16_white"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="6sp"
+                android:paddingTop="@dimen/dip5" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/closed_tab_advert_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tab_closed_message_container">
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                android:id="@+id/tab_closed_advert_progress"
+                style="@style/circle_material_progress_bar" />
+
+            <ImageView
+                android:id="@+id/closed_tab_advert_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_B3050D24">
+
+    <FrameLayout
+        android:id="@+id/enable_bluetooth_back_button"
+        android:layout_width="@dimen/dip52"
+        android:layout_height="@dimen/dip52">
+
+        <View
+            android:layout_width="@dimen/dip24"
+            android:layout_height="@dimen/dip24"
+            android:layout_gravity="center"
+            android:background="@drawable/inset_white_cross"/>
+    </FrameLayout>
+
+    <TextView
+        style="@style/text_16_white_montserrat_light"
+        android:layout_marginTop="@dimen/dip182"
+        android:padding="@dimen/dip16"
+        android:gravity="center"
+        android:text="@string/enable_bluetooth_screen_message"/>
+
+    <Button
+        android:id="@+id/enable_bluetooth_button"
+        style="@style/bottom_app_button_blue"
+        android:text="@string/enable" />
+
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/city_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_CC050D24"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dip35"
+        android:layout_marginBottom="@dimen/dip35"
+        android:layout_marginStart="@dimen/dip16"
+        android:layout_marginEnd="@dimen/dip16"
+        android:background="@drawable/shape_rectangle_white_corner_4">
+
+        <ImageView
+            android:id="@+id/feedback_header_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip240"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rating_top_tv_corners" />
+
+        <TextView
+            android:id="@+id/feedback_thanks"
+            style="@style/text_16_white"
+            android:layout_marginTop="@dimen/dip65"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/montserrat_light"
+            android:lineSpacingExtra="@dimen/sp5"
+            android:text="@string/thanks_for_visiting"/>
+
+        <TextView
+            android:id="@+id/feedback_bar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedback_thanks"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dip15"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp37"/>
+
+        <TextView
+            android:id="@+id/feedback_rate_your_experience"
+            style="@style/text_16_white"
+            android:layout_below="@id/feedback_bar_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dip15"
+            android:text="@string/feedback_rate_your_experience"
+            android:fontFamily="@font/montserrat_light"
+            android:lineSpacingExtra="@dimen/sp5"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feedback_rate_your_experience"
+            android:layout_centerHorizontal="true">
+
+            <RadioGroup
+                android:id="@+id/feedback_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/inset_like_dislike_backgroud">
+
+                <RadioButton
+                    android:id="@+id/feedback_rate_negative"
+                    style="@style/feedback_radio_button"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dip20"
+                    android:background="@drawable/selector_feedback_radio_button_negative"/>
+
+                <RadioButton
+                    android:id="@+id/feedback_rate_positive"
+                    style="@style/feedback_radio_button"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="71dp"
+                    android:layout_marginBottom="@dimen/dip20"
+                    android:background="@drawable/selector_feedback_radio_button_positive"
+                    android:checked="true"/>
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="153dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/dip24"
+                    android:layout_height="@dimen/dip24"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/inset_like"/>
+
+                <ImageView
+                    android:layout_width="@dimen/dip24"
+                    android:layout_height="@dimen/dip24"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rotate_dislike"/>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/feedback_data_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedback_rate_your_experience"
+            android:layout_marginTop="@dimen/dip120"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="@dimen/dip162"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/feedback_share_love_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/share_facebook"
+                        android:layout_width="@dimen/dip35"
+                        android:layout_height="@dimen/dip40"
+                        android:layout_alignParentStart="true"
+                        android:button="@null"
+                        android:background="@drawable/selector_feedback_radio_button_facebook" />
+
+                    <CheckBox
+                        android:id="@+id/share_twitter"
+                        android:layout_width="@dimen/dip35"
+                        android:layout_height="@dimen/dip40"
+                        android:button="@null"
+                        android:background="@drawable/selector_feedback_radio_button_twitter"
+                        android:layout_centerInParent="true"/>
+
+                    <CheckBox
+                        android:id="@+id/share_email"
+                        android:layout_width="@dimen/dip35"
+                        android:layout_height="@dimen/dip40"
+                        android:button="@null"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/selector_feedback_radio_button_email"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dip17"
+                        android:layout_height="@dimen/dip17"
+                        android:background="@drawable/inset_facebook_white"
+                        android:layout_marginStart="@dimen/dip9"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/dip32"
+                        android:layout_height="@dimen/dip32"
+                        android:background="@drawable/inset_twitter_white"
+                        android:layout_centerInParent="true"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/dip20"
+                        android:layout_height="@dimen/dip20"
+                        android:background="@drawable/inset_new_email"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="7.5dp" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/editTextFeedback"
+                style="@style/text_prompt_dark"
+                android:layout_marginTop="@dimen/dip10"
+                android:layout_height="@dimen/dip100"
+                android:hint="@string/feedback_optional_comments"
+                android:textColor="@color/textview_feedback_text_color"
+                android:background="@null"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:textColorHint="@color/color_dadada"
+                android:fontFamily="@font/montserrat_light"
+                android:textSize="@dimen/sp16"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/feedback_send"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip52"
+            android:background="@drawable/shape_00a9e3_51d767_gradient_bottom_corners"
+            android:layout_alignParentBottom="true"
+            android:text="@string/button_submit"
+            android:textSize="@dimen/sp14"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/montserrat_medium"/>
+
+    </RelativeLayout>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progress"
+        style="@style/general_material_progress_bar"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dip"
+              android:layout_height="wrap_content"
+              android:minWidth="300dip"
+              android:background="@color/primary"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/dip16"
+        android:layout_marginBottom="@dimen/dip20"
+        android:text="@string/error_no_photo"
+        android:textSize="22sp"/>
+
+    <LinearLayout
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <FrameLayout
+            android:id="@+id/button_cancel_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusableInTouchMode="false">
+
+            <Button
+                android:id="@+id/button_cancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip44"
+                android:background="@drawable/theme_primary_selector"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:text="@string/camera"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/secondary"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusableInTouchMode="false">
+
+            <Button
+                android:id="@+id/button_ok"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip44"
+                android:textColor="@android:color/white"
+                android:background="@drawable/theme_primary_selector"
+                android:textSize="18sp"
+                android:text="@string/gallery"/>
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bar_detail_friends_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/see_who_is_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/see_who_apos_s_here"
+        android:fontFamily="@font/montserrat_regular"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone"
+        android:textSize="@dimen/sp22"/>
+    
+    <Button
+        android:id="@+id/see_who_is_here_authorization_button"
+        style="@style/text_14_montserrat_regular"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip52"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dip16"
+        android:background="@drawable/dark_blue_button_background"
+        android:drawableStart="@drawable/inset_facebook_white"
+        android:drawablePadding="@dimen/dip_minus20"
+        android:padding="@dimen/dip16"
+        android:textAllCaps="false"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/see_who_is_here_fb_visibility_button"
+        style="@style/text_14_montserrat_regular"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip52"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dip16"
+        android:background="@drawable/dark_blue_button_background"
+        android:textAllCaps="false"
+        android:padding="@dimen/dip16"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/check_in_friends_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="@dimen/dip8"
+        tools:context=".delivering.component.bar.detail.BarDetailActivity"/>
+
+</LinearLayout>
+
+

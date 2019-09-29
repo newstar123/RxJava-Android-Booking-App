@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_050D24">
+
+    <ImageView
+        android:id="@+id/splash_back_button"
+        android:layout_width="@dimen/dip56"
+        android:layout_height="@dimen/dip56"
+        android:background="@android:color/transparent"
+        android:src="@drawable/inset_white_cross"
+        android:padding="@dimen/dip12"/>
+    
+    <TextView
+        android:id="@+id/check_in_splash_title"
+        style="@style/text_22_montserrat_regular"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/dip113"
+        android:text="@string/come_on_in" />
+
+    <TextView
+        android:id="@+id/check_in_splash_subtitle"
+        style="@style/text_14_montserrat_regular"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/dip5"
+        android:text="@string/when_you_order"
+        android:gravity="center"
+        android:layout_below="@+id/check_in_splash_title" />
+
+    <ImageView
+        android:id="@+id/icon_qorum"
+        android:layout_width="@dimen/dip96"
+        android:layout_height="@dimen/dip111"
+        android:layout_below="@+id/check_in_splash_subtitle"
+        android:layout_marginTop="@dimen/dip25"
+        android:layout_marginBottom="@dimen/dip25"
+        android:layout_centerInParent="true"
+        android:background="@drawable/icon_logo"/>
+
+    <TextView
+        style="@style/text_14_montserrat_light"
+        android:layout_below="@id/icon_qorum"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/check_in_splash_text" />
+
+</RelativeLayout>

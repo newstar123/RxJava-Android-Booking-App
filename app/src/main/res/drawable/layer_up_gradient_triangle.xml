@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="@dimen/dip4"
+        android:top="@dimen/dip4"
+        android:start="@dimen/dip4"
+        android:end="@dimen/dip4">
+        <rotate
+            android:fromDegrees="-45"
+            android:toDegrees="45">
+            <shape android:shape="rectangle">
+                <gradient
+                    android:startColor="#00a9e3"
+                    android:endColor="#51d767"/>
+                <size
+                    android:height="@dimen/dip20"
+                    android:width="@dimen/dip20" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

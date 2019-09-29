@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_B3050D24">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dip25">
+
+        <TextView
+            android:id="@+id/initial_location_reason_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp26"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@android:color/white"
+            android:text="@string/location_reason_title"
+            android:layout_marginBottom="@dimen/dip25"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/initial_location_reason_message"
+            style="@style/text_16_white_montserrat_light"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="@string/initial_location_reason"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/initial_location_reason_button"
+        style="@style/bottom_app_button_blue"
+        android:text="@string/got_it"/>
+
+</RelativeLayout>

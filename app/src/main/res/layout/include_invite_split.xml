@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dip16">
+
+    <FrameLayout
+        android:id="@+id/invite_split_edit_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/dip16"
+        android:paddingRight="@dimen/dip16">
+
+        <Button
+            android:id="@+id/invite_split_button"
+            android:layout_width="@dimen/dip25"
+            android:layout_height="@dimen/dip25"
+            android:layout_gravity="center_vertical|end"
+            android:background="@drawable/inset_add"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/invite_split_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/invite_split_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/enter_name_phone"/>
+        </android.support.design.widget.TextInputLayout>
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/invited_friends_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invite_split_edit_container"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/invite_split_user_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invited_friends_recycler"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dip10"
+        android:paddingBottom="@dimen/dip25"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/text_16_white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/you_will_pay"/>
+
+        <TextView
+            android:id="@+id/user_pay_value"
+            style="@style/text_16_white"
+            android:text="$ 31.23"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tab_total_pay_value"
+        style="@style/text_20_white"
+        android:textStyle="bold"
+        android:layout_below="@id/invite_split_user_pay"
+        android:layout_centerHorizontal="true"
+        android:text="@string/total_value"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/split_button"
+        android:layout_width="137dip"
+        android:layout_height="36dip"
+        android:layout_below="@+id/tab_total_pay_value"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dip20"
+        android:layout_marginTop="@dimen/dip16"
+        android:layout_marginLeft="@dimen/dip20"
+        android:layout_marginRight="@dimen/dip20"
+        android:textAllCaps="true"
+        android:background="@drawable/blue_button_corner_5_background"
+        android:text="@string/send_invite"
+        android:enabled="false"/>
+
+</RelativeLayout>

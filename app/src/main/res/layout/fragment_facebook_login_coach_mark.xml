@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/facebook_login_coach_mark_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/color_F2050D24">
+
+    <ImageView
+        android:id="@+id/close_cm"
+        android:layout_width="@dimen/dip24"
+        android:layout_height="@dimen/dip24"
+        android:background="@drawable/inset_white_cross"
+        android:layout_marginTop="@dimen/dip15"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginStart="@dimen/dip18"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_who_apos_s_here"
+        android:fontFamily="@font/montserrat_regular"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_above="@+id/connect_with_facebook_coach_button"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/sp22"/>
+
+    <Button
+        android:id="@+id/connect_with_facebook_coach_button"
+        style="@style/text_14_montserrat_regular"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip52"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dip16"
+        android:drawableStart="@drawable/inset_facebook_white"
+        android:padding="@dimen/dip16"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dark_blue_button_background"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:id="@+id/users_fb_icon"
+        android:layout_width="@dimen/dip141"
+        android:layout_height="@dimen/dip162"
+        android:src="@drawable/inset_users_fb"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/dip10"
+        android:layout_above="@+id/facebook_login_coach_mark_message"/>
+
+    <TextView
+        android:id="@+id/facebook_login_coach_mark_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:text="@string/facebook_login_coach_message"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp16"
+        android:textStyle="normal"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+
+</RelativeLayout>

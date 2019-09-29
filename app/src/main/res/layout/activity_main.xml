@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_main_app_bar"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/bar_list_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <app.delivering.component.bar.lists.floating.CustomFloatingButton
+            android:id="@+id/to_map_floating_button"
+            android:layout_width="81dip"
+            android:layout_height="96dip"
+            android:layout_gravity="center_horizontal|bottom"
+            android:elevation="@dimen/dip5"
+            android:layout_marginBottom="-32dip"
+            android:fontFamily="@font/montserrat_regular"
+            android:drawableTop="@drawable/inset_map_white"
+            android:paddingTop="30dip"
+            android:drawablePadding="-30dip"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:text="@string/word_map"
+            android:textAllCaps="false"
+            android:background="@drawable/shape_custom_fab_gradient"
+            android:visibility="gone"/>
+
+        <include layout="@layout/include_splash_screen"/>
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/progress"
+            style="@style/general_material_progress_bar"/>
+
+        <FrameLayout
+            android:id="@+id/free_ride_mark"
+            android:layout_width="@dimen/dip100"
+            android:layout_height="@dimen/dip100"
+            android:layout_gravity="end|bottom"
+            android:background="@drawable/green_oval"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="-50dip"
+            android:layout_marginBottom="-50dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dip22"
+                android:layout_height="@dimen/dip22"
+                android:layout_margin="@dimen/dip20"
+                android:src="@drawable/inset_uber_white_logo"/>
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:insetForeground="@android:color/transparent"
+        app:itemTextColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/transparent">
+
+            <include layout="@layout/include_navigation_header"/>
+
+            <include layout="@layout/include_navigation_body"/>
+
+        </LinearLayout>
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

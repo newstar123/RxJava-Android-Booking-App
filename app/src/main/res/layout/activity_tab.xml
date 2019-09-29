@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/advert_tab_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip120"
+        android:scaleType="fitXY" />
+
+    <include
+        android:id="@+id/tab_uber_button"
+        layout="@layout/include_tab_uber_button" />
+
+    <Button
+        android:id="@+id/tab_tip_confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip56"
+        android:layout_gravity="bottom"
+        android:background="@drawable/shape_dadada_corner_5"
+        android:text="@string/accept"
+        android:textColor="@color/color_828691"
+        android:textSize="14sp"
+        android:enabled="false"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/tab_information_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dip56"
+        android:layout_marginTop="@dimen/dip120">
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/tab_line_progress"
+            style="@style/general_material_progress_bar" />
+
+        <ImageView
+            android:id="@+id/tab_back_button"
+            android:layout_width="@dimen/dip48"
+            android:layout_height="@dimen/dip48"
+            android:padding="@dimen/dip12"
+            android:src="@drawable/inset_arrow_back" />
+
+        <TextView
+            android:id="@+id/tab_name"
+            style="@style/wrap"
+            android:layout_below="@id/tab_back_button"
+            android:layout_marginStart="@dimen/dip16"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/my_tab"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp22" />
+
+        <TextView
+            android:id="@+id/tab_bar_name"
+            style="@style/wrap"
+            android:layout_below="@id/tab_name"
+            android:layout_marginBottom="@dimen/dip8"
+            android:layout_marginStart="@dimen/dip16"
+            android:layout_marginTop="@dimen/dip5"
+            android:fontFamily="@font/montserrat_light"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp10" />
+
+        <TextView
+            android:id="@+id/tab_free_uber_timer"
+            style="@style/wrap"
+            android:layout_alignBaseline="@id/tab_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dip16"
+            android:fontFamily="@font/digital_7"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp26" />
+
+        <TextView
+            android:id="@+id/tab_free_uber_title"
+            style="@style/wrap"
+            android:layout_alignBaseline="@id/tab_bar_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dip16"
+            android:fontFamily="@font/montserrat_light"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp10" />
+
+        <View
+            android:id="@+id/view_1"
+            style="@style/divider_1_5b606f"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@id/tab_bar_name"
+            android:layout_marginEnd="@dimen/dip16"
+            android:layout_marginStart="@dimen/dip16" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/tab_refresh_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_1"
+            android:layout_above="@id/bottom_content_layout"
+            android:layout_marginBottom="@dimen/dip_minus4">
+
+            <include
+                android:id="@+id/tab_content"
+                layout="@layout/include_tab_content" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_content_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/subtotal_content"
+                layout="@layout/list_item_tab_subtotal_group" />
+
+            <View
+                android:id="@+id/bottom_view_line"
+                style="@style/divider_1_5b606f"
+                android:layout_marginStart="@dimen/dip16"
+                android:layout_marginEnd="@dimen/dip16"/>
+
+            <RelativeLayout
+                android:id="@+id/tabb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/tab_fixed_content"
+                    layout="@layout/include_tab_fixed_content" />
+
+                <TextView
+                    android:id="@+id/drink_discounts_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qorum_drink_discounts"
+                    style="@style/text_10_montserrat_medium_white"
+                    android:layout_below="@id/tab_fixed_content"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_2"
+                style="@style/divider_1_5b606f"
+                android:layout_marginEnd="@dimen/dip16"
+                android:layout_marginStart="@dimen/dip16" />
+
+            <Button
+                android:id="@+id/tab_close"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip40"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/close_tab"
+                android:textAllCaps="false"
+                android:textColor="@color/color_50_ffffff"
+                android:textSize="@dimen/sp15"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_coach_mark_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/color_F2050D24">
+
+    <RelativeLayout
+        android:id="@+id/free_ride_coach_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/dip10">
+
+        <TextView
+            android:id="@+id/free_ride_coach_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp16"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/dip5"
+            android:layout_marginBottom="@dimen/dip20"
+            android:gravity="center"
+            android:text="@string/free_ride_coach_mark_message" />
+
+        <Button
+            android:id="@+id/free_ride_coach_got_it"
+            style="@style/bottom_app_button_blue"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@id/free_ride_coach_message"
+            android:text="@string/got_it_with_exclamation_mark" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/free_ride_coach_button"
+        android:layout_width="@dimen/dip100"
+        android:layout_height="@dimen/dip100"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/green_oval"
+        android:layout_marginEnd="-50dip"
+        android:layout_marginBottom="-50dip">
+
+        <ImageView
+            android:layout_width="@dimen/dip22"
+            android:layout_height="@dimen/dip22"
+            android:layout_margin="@dimen/dip20"
+            android:src="@drawable/inset_uber_white_logo"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/free_ride_coach_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/blue_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:rotation="180"
+            android:layout_marginBottom="@dimen/dip26"
+            android:layout_marginEnd="@dimen/dip48"
+            android:background="@drawable/svg_icon_blue_arrow"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dip"
+    android:padding="@dimen/dip8">
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/friend_item_image_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        style="@style/circle_material_progress_bar"/>
+
+    <ImageView
+        android:id="@+id/check_friend_broken_photo"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/inset_broken_resource"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/check_in_friend_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dip10"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@drawable/shape_050d25_gradient">
+
+        <TextView
+            android:id="@+id/check_in_friend_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:lines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/check_in_friend_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:lines="1"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

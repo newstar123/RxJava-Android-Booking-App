@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="server_host_list">
+        <item>stg.backend.qorum.com</item>
+        <item>prod.backend.qorum.com</item>
+        <item>qorum.us-west-1.elasticbeanstalk.com</item>
+        <item>qorum-backend-staging.herokuapp.com</item>
+    </string-array>
+
+    <string-array name="connection_type">
+        <item>https://</item>
+        <item>http://</item>
+    </string-array>
+
+    <string-array name="server_host_suffix">
+        <item>/api/</item>
+    </string-array>
+
+    <string-array name="uber_host">
+        <item>https://sandbox-api.uber.com/</item>
+        <item>https://api.uber.com/</item>
+    </string-array>
+</resources>

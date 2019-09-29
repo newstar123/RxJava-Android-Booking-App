@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/inner_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dip20"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/settings_progress"
+        style="@style/general_material_progress_bar"/>
+
+    <TextView
+        android:id="@+id/terms_title"
+        style="@style/wrap"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/sp20"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/share_the_love"/>
+
+    <TextView
+        android:id="@+id/terms_subtitle"
+        style="@style/wrap"
+        android:layout_below="@id/terms_title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="@dimen/sp6"
+        android:paddingTop="@dimen/dip10"
+        android:fontFamily="@font/montserrat_light"
+        android:text="@string/share_drinks_message"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp16"/>
+
+    <TextView
+        android:id="@+id/terms_message"
+        style="@style/wrap"
+        android:layout_below="@id/terms_subtitle"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/dip10"
+        android:text="@string/share_drinks_line4"
+        android:textColor="@color/color_59ffffff"
+        android:textSize="@dimen/sp12"
+        android:fontFamily="@font/montserrat_regular"/>
+
+    <TextView
+        android:id="@+id/terms_conditions"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip55"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/share_drinks_terms_and_cond"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/color_59ffffff"
+        android:textSize="@dimen/sp12"/>
+
+    <RelativeLayout
+        android:id="@+id/terms_free_drinks_waiting"
+        style="@style/free_drinks_container"
+        android:layout_above="@id/terms_conditions">
+        <TextView
+            style="@style/free_drinks_counter_title"
+            android:text="@string/share_drinks_free_drinks_waiting"/>
+        <TextView
+            android:id="@+id/free_drinks_waiting"
+            style="@style/free_drinks_counter_value" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/terms_friends_checked_in"
+        style="@style/free_drinks_container"
+        android:visibility="visible"
+        android:layout_above="@id/terms_free_drinks_waiting">
+
+        <TextView
+            style="@style/free_drinks_counter_title"
+            android:text="@string/share_drinks_friends_checked_in" />
+
+        <TextView
+            android:id="@+id/friends_checked_in"
+            style="@style/free_drinks_counter_value"/>
+
+        <View style="@style/divider_1_5b606f" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/terms_invites_accepted"
+        style="@style/free_drinks_container"
+        android:visibility="visible"
+        android:layout_above="@id/terms_friends_checked_in">
+
+        <TextView
+            style="@style/free_drinks_counter_title"
+            android:text="@string/share_drinks_invites_completed"/>
+
+        <TextView
+            android:id="@+id/invites_accepted"
+            style="@style/free_drinks_counter_value"/>
+
+        <View style="@style/divider_1_5b606f" />
+    </RelativeLayout>
+
+    <include layout="@layout/include_free_drinks_socials" />
+
+    <include layout="@layout/include_verify_account"/>
+
+</RelativeLayout>

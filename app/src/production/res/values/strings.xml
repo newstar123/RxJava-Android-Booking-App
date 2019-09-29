@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- <string name="server_host">http://qorum.us-west-1.elasticbeanstalk.com</string> -->
+    <string name="server_host">https://prod.backend.qorum.com</string>
+    <string name="stripe_key">"pk_test_pMkMWtT8U4h3tYevqMkh0M26"</string>
+    <string name="mixpanel">"7ce4ed6db9a70e1ed8e0e85bdb229630"</string>
+    <string name="uber_client_id">"kr_FY1h1pQEzg1srUxSfjqDY_fRPtvgh"</string>
+    <string name="uber_server_token">"BGfgsYcyoRhmnTNy9FUkmYFSjsR1LVg2kXROCxNx"</string>
+    <string name="geo_api_key">"AIzaSyDch9p5Xem6KHyIw6Fj8dxdzjvkn5mFJE0"</string>
+</resources>

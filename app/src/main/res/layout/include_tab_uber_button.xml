@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dip52"
+    android:layout_gravity="bottom"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="@dimen/dip16"
+    android:layout_marginEnd="@dimen/dip16"
+    android:layout_marginBottom="@dimen/dip5"
+    android:background="@drawable/shape_123e4c_corner_5">
+
+    <RelativeLayout
+        android:id="@+id/tab_uber_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/word_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingEnd="@dimen/dip9"
+            android:text="@string/free"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/uber_icon"
+            android:layout_width="@dimen/dip30"
+            android:layout_height="@dimen/dip30"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/word_free"
+            android:layout_toRightOf="@id/word_free"
+            android:contentDescription="@string/uber"
+            android:src="@drawable/inset_uber_white_logo" />
+
+        <ImageView
+            android:id="@+id/word_uber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dip9"
+            android:paddingTop="@dimen/dip3"
+            android:layout_toEndOf="@id/uber_icon"
+            android:src="@drawable/inset_uber_white_text" />
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/tab_uber_max_discount"
+        style="@style/wrap"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/montserrat_regular"
+        android:paddingEnd="@dimen/dip16"
+        android:textColor="@color/color_50_ffffff"
+        android:textSize="12sp"
+        android:visibility="gone" />
+</RelativeLayout>

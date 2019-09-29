@@ -1,0 +1,3 @@
+[submodule "submodule/displayingbitmaps"]
+	path = submodule/displayingbitmaps
+	url = https://github.com/johnnylambada/displayingbitmaps.git

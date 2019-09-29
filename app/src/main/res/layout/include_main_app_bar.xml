@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:elevation="@dimen/dip0"
+    android:visibility="gone">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/main_collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|snap"
+        app:title=" ">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            app:titleEnabled="false"
+            android:contentInsetLeft="@dimen/dip0"
+            android:contentInsetStart="@dimen/dip0"
+            app:contentInsetLeft="@dimen/dip0"
+            app:contentInsetStart="@dimen/dip0"
+            android:contentInsetRight="@dimen/dip0"
+            android:contentInsetEnd="@dimen/dip0"
+            app:contentInsetRight="@dimen/dip0"
+            app:contentInsetEnd="@dimen/dip0"
+            app:contentInsetStartWithNavigation="@dimen/dip0"
+            app:contentInsetEndWithActions="@dimen/dip0">
+
+            <include layout="@layout/include_main_app_bar_search" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|snap"
+        app:title=" ">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            style="@style/AppTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip48"
+            android:background="@android:color/transparent"
+            app:layout_collapseMode="pin" />
+
+        <TextView
+            android:id="@+id/refer_friends_coach_mark"
+            style="@style/text_14_white"
+            android:layout_width="230dp"
+            android:layout_height="80dip"
+            android:layout_gravity="end|right"
+            android:layout_marginTop="-6dip"
+            android:layout_marginEnd="@dimen/dip2"
+            android:paddingBottom="@dimen/dip16"
+            android:paddingStart="@dimen/dip20"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/refer_friends"
+            android:elevation="@dimen/dip5"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/inset_share_coach_mark_background"/>
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+</android.support.design.widget.AppBarLayout>

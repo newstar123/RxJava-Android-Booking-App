@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/about_bar_grid_view"
+        android:layout_width="168dip"
+        android:layout_height="168dip"
+        android:padding="@dimen/dip4"/>
+
+    <ImageView
+        android:id="@+id/about_bar_grid_video_icon"
+        android:layout_width="34dip"
+        android:layout_height="43dip"
+        android:src="@drawable/inset_play_arrow"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

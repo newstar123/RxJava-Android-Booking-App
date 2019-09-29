@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_212121">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_212121">
+
+        <include layout="@layout/activity_order_ride_map_container"/>
+
+        <include layout="@layout/activity_order_ride_advert_container"/>
+
+        <include layout="@layout/activity_order_ride_fill_views_first"/>
+
+        <include layout="@layout/activity_order_ride_enter_values_container"/>
+
+        <include layout="@layout/activity_order_ride_fill_views_second"/>
+
+        <include layout="@layout/activity_order_ride_pool_capacity"/>
+
+        <include layout="@layout/activity_order_ride_fill_views_third"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/activity_order_ride_type_details" />
+
+</android.support.design.widget.CoordinatorLayout>

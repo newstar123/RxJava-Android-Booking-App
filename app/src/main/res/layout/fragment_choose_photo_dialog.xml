@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dip16"
+    android:layout_gravity="bottom"
+    android:background="@android:color/transparent">
+
+    <TextView
+        style="@style/text_12"
+        android:layout_width="match_parent"
+        android:text="@string/add_profile_photo"
+        android:textColor="@color/color_5b606f"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:padding="@dimen/dip12"
+        android:background="@color/window_background"/>
+
+    <View style="@style/divider_1_5b606f"/>
+
+    <TextView
+        android:id="@+id/import_from_facebook"
+        style="@style/text_18_montserrat_medium_blue"
+        android:gravity="center"
+        android:padding="@dimen/dip12"
+        android:background="@color/window_background"
+        android:text="@string/import_from_facebook" />
+
+    <View style="@style/divider_1_5b606f"/>
+
+    <TextView
+        android:id="@+id/text_view_choose_gallery"
+        style="@style/text_18_montserrat_medium_blue"
+        android:gravity="center"
+        android:padding="@dimen/dip12"
+        android:background="@color/window_background"
+        android:text="@string/choose_from_library" />
+
+    <View style="@style/divider_1_5b606f"/>
+
+    <TextView
+        android:id="@+id/text_view_take_photo"
+        style="@style/text_18_montserrat_medium_blue"
+        android:gravity="center"
+        android:padding="@dimen/dip12"
+        android:background="@color/window_background"
+        android:text="@string/take_photo" />
+
+    <TextView
+        android:id="@+id/text_view_cancel"
+        style="@style/text_18_montserrat_medium_blue"
+        android:gravity="center"
+        android:padding="@dimen/dip12"
+        android:background="@color/window_background"
+        android:layout_marginTop="@dimen/dip10"
+        android:text="@string/cancel" />
+
+</LinearLayout>

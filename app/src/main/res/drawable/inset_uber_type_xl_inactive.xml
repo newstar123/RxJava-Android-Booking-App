@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+       android:insetBottom="5dip"
+       android:insetLeft="5dip"
+       android:insetRight="5dip"
+       android:insetTop="5dip"
+       android:drawable="@drawable/svg_uber_type_xl_inactive"/>

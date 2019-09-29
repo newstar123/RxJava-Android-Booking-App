@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dip10"
+    android:background="@drawable/shape_qa_mode_card">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_16_white_montserrat_light"
+            android:textStyle="bold"
+            android:paddingEnd="@dimen/dip42"
+            android:text="@string/use_real_uber_api"/>
+
+        <ToggleButton
+            android:id="@+id/uber_api_type_toggle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dip24"
+            android:layout_gravity="center_vertical|end"
+            android:textOn="@string/word_on"
+            android:textOff="@string/word_off"
+            android:background="@drawable/selector_blue_transparent" />
+    </FrameLayout>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/uber_api_type_progress"
+        style="@style/circle_material_progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

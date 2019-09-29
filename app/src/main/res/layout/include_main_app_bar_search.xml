@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/search_market_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip34"
+        android:layout_marginTop="@dimen/dip12"
+        android:layout_marginEnd="@dimen/dip16"
+        android:background="@drawable/gray_transparent_corner_5_background">
+
+        <TextView
+            android:id="@+id/selected_market"
+            style="@style/text_14_montserrat_medium"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dip8"
+            android:layout_marginEnd="@dimen/dip70"
+            android:drawableStart="@drawable/inset_search_icon"
+            android:drawablePadding="@dimen/dip6"/>
+
+        <ImageView
+            android:id="@+id/expand_hint_button"
+            android:layout_width="@dimen/dip18"
+            android:layout_height="@dimen/dip18"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dip10"
+            android:layout_marginLeft="@dimen/dip10"
+            android:layout_marginEnd="@dimen/dip10"
+            android:layout_marginRight="@dimen/dip10"
+            android:clickable="false"
+            android:src="@drawable/inset_expand_hint_blue"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

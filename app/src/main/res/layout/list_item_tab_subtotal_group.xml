@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_summary_container"
+    android:layout_width="match_parent"
+    android:paddingStart="@dimen/dip16"
+    android:paddingEnd="@dimen/dip16"
+    android:layout_height="@dimen/dip25">
+
+    <TextView
+        style="@style/text_14_montserrat_medium"
+        android:layout_gravity="center_vertical"
+        android:text="@string/tab_sub_total_title" />
+
+    <TextView
+        android:id="@+id/tab_summary_value"
+        style="@style/text_14_montserrat_medium"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginEnd="@dimen/dip25"
+        android:text="$0.00" />
+</FrameLayout>

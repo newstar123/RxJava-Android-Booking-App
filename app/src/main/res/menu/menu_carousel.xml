@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_bar_detail_photos_view_style"
+        android:icon="@drawable/inset_carousel"
+        android:orderInCategory="100"
+        android:title="@string/edit_account"
+        app:showAsAction="always"/>
+
+</menu>

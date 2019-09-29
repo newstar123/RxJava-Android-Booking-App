@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             style="@style/visible_tab_item_container">
+
+        <TextView
+            android:id="@+id/tab_summary_item_name"
+            style="@style/slidable_text_16_white"
+            android:layout_gravity="center_vertical"
+            android:maxWidth="210dip"/>
+
+        <TextView
+            android:id="@+id/tab_summary_item_cost"
+            style="@style/slidable_text_16_white"
+            android:maxWidth="90dip"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="@dimen/dip16"
+            android:layout_marginEnd="@dimen/dip16"/>
+</FrameLayout>

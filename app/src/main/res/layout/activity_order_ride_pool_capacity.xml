@@ -1,0 +1,38 @@
+<RadioGroup
+    android:id="@+id/order_ride_pool_capacity"
+    style="@style/wrap"
+    android:layout_below="@+id/order_ride_pool_question"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/dip24"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RadioButton
+        android:id="@+id/order_ride_pool_capacity_1"
+        android:layout_width="@dimen/dip60"
+        android:layout_height="@dimen/dip60"
+        android:layout_marginEnd="@dimen/dip60"
+        android:background="@drawable/selector_uber_pool_capacity_background"
+        android:button="@null"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:checked="true"
+        android:text="1"
+        android:textColor="@color/selector_uber_pool_capacity_text_color"
+        android:textSize="@dimen/sp24"
+        android:textStyle="bold"/>
+
+    <RadioButton
+        android:id="@+id/order_ride_pool_capacity_2"
+        android:layout_width="@dimen/dip60"
+        android:layout_height="@dimen/dip60"
+        android:background="@drawable/selector_uber_pool_capacity_background"
+        android:button="@null"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/selector_uber_pool_capacity_text_color"
+        android:textSize="@dimen/sp18"
+        android:textStyle="normal"/>
+</RadioGroup>

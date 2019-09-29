@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="Theme.App" parent="Base.Theme.App"/>
+
+    <style name="Base.Theme.App" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/secondary</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:alertDialogTheme">@style/MyAlertDialogTheme</item>
+    </style>
+
+    <style name="dialog" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="Theme.SplashScreen" parent="Base.Theme.App">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Base.Theme.App">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:alertDialogTheme">@style/MyAlertDialogTheme</item>
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/transparent</item>
+        <item name="tabIndicatorHeight">9dp</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabBackground">@drawable/selector_tab_background</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/color_b3ffffff</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="VenueDetailTabLayout" parent="AppTabLayout">
+        <item name="tabTextAppearance">@style/VenueDetailTabTextAppearance</item>
+    </style>
+
+    <style name="VenueDetailTabTextAppearance" parent="AppTabTextAppearance">
+    <item name="android:textColor">@color/color_828691</item>
+</style>
+
+    <style name="Theme.Transparent.Dialog" parent="Base.Theme.App">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/bpTransparentLine_background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="CustomAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowTitleStyle">@style/CustomAlertDialogTitle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:textAppearanceMedium">@style/CustomAlertTextAppearance</item>
+        <item name="android:buttonBarStyle">@style/CustomButtonBar</item>
+        <item name="android:buttonBarButtonStyle">@style/CustomBorderlessButton</item>
+    </style>
+
+    <style name="CustomAlertTextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/color_8a000000</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CustomAlertDialogTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/color_de000000</item>
+    </style>
+
+    <style name="CustomBorderlessButton">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_00b2de</item>
+    </style>
+
+    <style name="CustomButtonBar">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="wrap_match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="EditProfileStyle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center|start</item>
+    </style>
+
+    <style name="EditProfileSpinnerStyle" parent="EditProfileStyle">
+        <item name="android:layout_height">@dimen/dip60</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:textAlignment">inherit</item>
+    </style>
+
+    <style name="CustomErrorViewStyle" parent="divider_1_bottom_4D5b606f">
+        <item name="android:background">@drawable/selector_error_view_colors</item>
+    </style>
+
+    <style name="EditProfileRelativeLStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip60</item>
+    </style>
+
+    <style name="wrap_center_vertical" parent="@style/wrap">
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="profile_input_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">28dip</item>
+        <item name="android:layout_marginRight">28dip</item>
+        <item name="android:layout_marginLeft">@dimen/dip44</item>
+        <item name="android:layout_marginStart">@dimen/dip44</item>
+    </style>
+
+    <style name="payment_input_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/dip5</item>
+    </style>
+
+    <style name="CustomPaymentTitle" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">@dimen/sp20</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="payment_text_hint" parent="@style/payment_input_layout">
+        <item name="android:color">@color/color_5b606f</item>
+        <item name="android:colorControlNormal">@color/color_5b606f</item>
+        <item name="android:colorControlActivated">@color/color_5b606f</item>
+        <item name="android:colorControlHighlight">@color/color_5b606f</item>
+        <item name="android:textColorHint">@android:color/white</item>
+    </style>
+
+    <style name="email_phone_verification">
+        <item name="android:color">@android:color/white</item>
+        <item name="android:colorControlNormal">@android:color/transparent</item>
+        <item name="android:colorControlActivated">@android:color/white</item>
+        <item name="android:colorControlHighlight">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/transparent</item>
+    </style>
+
+    <style name="bottom_verify_acc_buttons" parent="@style/bottom_app_button">
+        <item name="android:background">@drawable/selector_phone_email_verification</item>
+        <item name="android:enabled">false</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textColor">@color/selector_submit_button_color</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:text">@string/button_submit</item>
+    </style>
+
+    <style name="verify_account_buttons" parent="bottom_app_button_blue">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:layout_marginTop">@dimen/dip24</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">top|center</item>
+    </style>
+
+    <style name="profile_input_block" parent="@style/profile_input_layout">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="Widget.Design.TextInputLayout" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="hintTextAppearance">@style/TextFloatLabelAppearance</item>
+        <item name="errorTextAppearance">@style/TextErrorAppearance</item>
+        <item name="counterTextAppearance">@style/TextAppearance.Design.Counter</item>
+        <item name="counterOverflowTextAppearance">@style/TextAppearance.Design.Counter.Overflow
+        </item>
+    </style>
+
+    <style name="TextFloatLabelAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/color_cecece</item>
+    </style>
+
+    <style name="TextErrorAppearance" parent="TextAppearance.Design.Error">
+        <item name="android:textColor">@color/specialNotice</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearanceCounter" parent="TextAppearance.Design.Counter">
+    </style>
+
+    <style name="TextAppearanceCounterOverflow" parent="TextAppearance.Design.Counter.Overflow">
+    </style>
+
+    <style name="profile_spinner_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip55</item>
+        <item name="android:layout_marginLeft">@dimen/dip44</item>
+        <item name="android:layout_marginStart">@dimen/dip44</item>
+        <item name="android:layout_marginRight">@dimen/dip20</item>
+        <item name="android:layout_marginEnd">@dimen/dip20</item>
+    </style>
+
+    <style name="profile_image_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/dip20</item>
+        <item name="android:paddingLeft">@dimen/dip20</item>
+    </style>
+
+    <style name="general_material_progress_bar" parent="Widget.MaterialProgressBar.ProgressBar.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dip</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:visibility">gone</item>
+        <item name="mpb_useIntrinsicPadding">false</item>
+        <item name="mpb_progressStyle">horizontal</item>
+    </style>
+
+    <style name="circle_material_progress_bar" parent="Widget.MaterialProgressBar.ProgressBar.Horizontal">
+        <item name="android:layout_width">@dimen/dip60</item>
+        <item name="android:layout_height">@dimen/dip60</item>
+        <item name="android:indeterminate">true</item>
+        <item name="mpb_progressStyle">circular</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="ToolBarTextStyle">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">@dimen/sp20</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="map_marker" parent="@android:style/TextAppearance.Medium">
+        <item name="android:selectable">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="text_20_white" parent="wrap">
+        <item name="android:textSize">@dimen/sp20</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="text_16_white" parent="wrap">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="text_16_white_montserrat_light" parent="text_16_white">
+        <item name="android:fontFamily">@font/montserrat_light</item>
+    </style>
+
+    <style name="text_tips_16_white" parent="text_16_white">
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingStart">@dimen/dip4</item>
+        <item name="android:paddingLeft">@dimen/dip4</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="text_18_montserrat_medium_blue" parent="wrap">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color_00b2de</item>
+    </style>
+
+    <style name="text_14_black" parent="wrap">
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="text_22_white" parent="text_14_black">
+        <item name="android:textSize">@dimen/sp22</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="text_14_white" parent="text_14_black">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sp14</item>
+
+    </style>
+
+    <style name="text_14_montserrat_medium" parent="text_14_white">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="text_14_montserrat_light" parent="text_14_white">
+        <item name="android:fontFamily">@font/montserrat_light</item>
+    </style>
+
+    <style name="text_22_montserrat_regular" parent="text_22_white">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">@dimen/sp22</item>
+    </style>
+
+    <style name="text_14_montserrat_regular" parent="text_14_white">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="text_10" parent="wrap">
+        <item name="android:textSize">@dimen/sp10</item>
+    </style>
+
+    <style name="text_12" parent="wrap">
+        <item name="android:textSize">@dimen/sp12</item>
+    </style>
+
+    <style name="text_12_white" parent="text_12">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="text_10_white" parent="text_10">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="text_12_montserrat_medium" parent="text_12">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="text_12_montserrat_medium_white" parent="text_12_white">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="text_12_montserrat_regular" parent="text_12_white">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="text_10_montserrat_medium_white" parent="text_10_white">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="text_16_white_padding_16" parent="text_16_white">
+        <item name="android:selectable">true</item>
+        <item name="android:paddingBottom">@dimen/dip16</item>
+        <item name="android:paddingStart">@dimen/dip16</item>
+        <item name="android:paddingLeft">@dimen/dip16</item>
+        <item name="android:paddingRight">@dimen/dip16</item>
+        <item name="android:paddingEnd">@dimen/dip16</item>
+    </style>
+
+    <style name="tab_cost_text_16_white_big_padding" parent="tab_cost_text_16_white">
+        <item name="android:layout_marginRight">@dimen/dip30</item>
+        <item name="android:layout_marginEnd">@dimen/dip30</item>
+    </style>
+
+    <style name="tab_cost_text_16_white" parent="text_16_white">
+        <item name="android:layout_marginRight">@dimen/dip16</item>
+        <item name="android:layout_marginEnd">@dimen/dip16</item>
+        <item name="android:layout_gravity">center_vertical|end</item>
+    </style>
+
+    <style name="slidable_text_16_white" parent="slidable_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="text_22_gray" parent="wrap">
+        <item name="android:textSize">@dimen/sp22</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="slidable_text">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="tab_item_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip50</item>
+        <item name="android:paddingBottom">@dimen/dip8</item>
+        <item name="android:paddingTop">@dimen/dip8</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="visible_tab_item_container" parent="@style/tab_item_container">
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip1</item>
+    </style>
+
+    <style name="divider_1_343434" parent="divider">
+        <item name="android:background">@color/color_343434</item>
+    </style>
+
+    <style name="divider_1_424242" parent="divider">
+        <item name="android:background">@color/greyCode</item>
+    </style>
+
+    <style name="divider_1_5b606f" parent="divider">
+        <item name="android:background">@color/color_5b606f</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="divider_1_bottom_4D5b606f" parent="divider_1_5b606f">
+        <item name="android:background">@color/color_4D5b606f</item>
+    </style>
+
+    <style name="CustomMenuTitle" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">@dimen/sp20</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CustomSubMenuTitle" parent="CustomMenuTitle">
+
+    </style>
+
+    <style name="CustomView">
+        <item name="android:layout_width">match_parent </item>
+        <item name="android:layout_height">@dimen/dip1</item>
+        <item name="android:background">@color/color_5b606f</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="CustomNavigationDrawerMenuText" parent="wrap">
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="CustomNavigationDrawerMenuButton">
+        <item name="android:layout_width">@dimen/dip25</item>
+        <item name="android:layout_height">@dimen/dip25</item>
+        <item name="android:background">@drawable/inset_arrow_right</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+    </style>
+
+    <style name="text_prompt_dark">
+        <item name="colorControlNormal">#363636</item>
+        <item name="colorControlActivated">@color/accent</item>
+        <item name="colorControlHighlight">@color/accent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">-4dp</item>
+        <item name="android:layout_marginLeft">@dimen/sp10</item>
+        <item name="android:layout_marginRight">@dimen/sp10</item>
+    </style>
+
+    <style name="feedback_radio_button">
+        <item name="android:layout_width">56dip</item>
+        <item name="android:layout_height">66dip</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="free_drinks_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip52</item>
+        <item name="android:paddingStart">@dimen/dip17</item>
+        <item name="android:paddingLeft">@dimen/dip17</item>
+        <item name="android:paddingRight">@dimen/dip15</item>
+        <item name="android:paddingEnd">@dimen/dip15</item>
+    </style>
+
+    <style name="empty_block_horizontal">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="notification_button_text" parent="@style/wrap">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#617e8b</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:lineSpacingExtra">0.5sp</item>
+        <item name="android:drawablePadding">@dimen/dip5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="bottom_app_button" parent="@style/text_16_white_montserrat_light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dip52</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginStart">@dimen/dip16</item>
+        <item name="android:layout_marginEnd">@dimen/dip16</item>
+        <item name="android:layout_marginBottom">@dimen/dip5</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="small_app_button" parent="@style/bottom_app_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dip32</item>
+        <item name="android:layout_margin">@dimen/dip6</item>
+        <item name="android:paddingStart">@dimen/dip10</item>
+        <item name="android:paddingEnd">@dimen/dip10</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/blue_button_corner_5_background</item>
+    </style>
+
+    <style name="bottom_app_button_gradient" parent="@style/bottom_app_button">
+        <item name="android:background">@drawable/shape_00a9e3_51d767_corner_5</item>
+    </style>
+
+    <style name="bottom_app_button_blue" parent="@style/bottom_app_button">
+        <item name="android:background">@drawable/blue_button_corner_5_background</item>
+    </style>
+
+    <style name="uber_app_button_style" parent="@style/bottom_app_button">
+        <item name="android:background">@drawable/uber_button_corner_background</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingStart">@dimen/dip12</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="vendor_work_type_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingLeft">@dimen/dip5</item>
+        <item name="android:paddingStart">@dimen/dip5</item>
+        <item name="android:paddingEnd">@dimen/dip5</item>
+        <item name="android:paddingRight">@dimen/dip5</item>
+        <item name="android:paddingTop">@dimen/dip1</item>
+    </style>
+
+    <style name="free_drinks_counter_title" parent="@style/text_16_white">
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="free_drinks_counter_value" parent="@style/text_16_white">
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="MyAlertDialogTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/MyAlertDialogTitle</item>
+        <item name="android:windowContentOverlay">@color/color_CC050D24</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:textAppearanceMedium">@style/MyAlertTextAppearance</item>
+            If you don't want your own button bar style use
+            @android:style/Holo.Light.ButtonBar.AlertDialog
+            and
+            ?android:attr/borderlessButtonStyle
+            instead of @style/MyButtonBar and @style/MyBorderlessButton
+        <item name="android:buttonBarStyle">@style/MyButtonBar</item>
+        <item name="android:buttonBarButtonStyle">@style/MyBorderlessButton</item>
+    </style>
+
+    <style name="MyAlertDialogTitle">
+        <item name="android:textSize">@dimen/sp20</item>
+        <item name="android:textColor">@color/color_de000000</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="MyAlertTextAppearance">
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColor">@color/color_8a000000</item>
+    </style>
+
+    <style name="DatePickerDialogTheme" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="MyButtonBar">
+        <item name="android:showDividers">none</item>
+    </style>
+
+    <style name="MyBorderlessButton">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/color_00b2de</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <style name="CustomDialogButton" parent="wrap">
+        <item name="android:textColor">@color/color_00b2de</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="StyleFontMontserratItalic">
+        <item name="android:fontFamily">@font/montserrat_italic</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="StyleFontMontserratRegular">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="StyleFontMontserratMedium">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="MonthYearDialog" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:datePickerStyle">@style/MonthYearPickerStyle</item>
+    </style>
+
+    <style name="MonthYearPickerStyle" parent="@android:style/Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+    <style name="center_vertical_end_16_view">
+        <item name="android:layout_width">@dimen/dip16</item>
+        <item name="android:layout_height">@dimen/dip16</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+    <style name="animated_arrows_style">
+        <item name="android:layout_width">@dimen/dip50</item>
+        <item name="android:layout_height">@dimen/dip50</item>
+        <item name="android:background">@drawable/inset_arrow_left_thin</item>
+    </style>
+
+    <style name="splash_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/logo</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/dip120</item>
+    </style>
+
+    <style name="age_picker_style" parent="match_wrap">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/sp22</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+</resources>

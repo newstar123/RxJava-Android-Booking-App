@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="error_network">Network error.</string>
+    <string name="image_upload">Select imageURL from&#8230;</string>
+    <string name="word_ok">OK</string>
+    <string name="word_error">Error</string>
+    <string name="word_cancel">Cancel</string>
+    <string name="word_camera">Camera</string>
+    <string name="word_file">Gallery</string>
+    <string name="word_alert">Alert</string>
+    <string name="title_upload">Upload imageURL</string>
+    <string name="baseempty"></string>
+    <string name="word_yes">YES</string>
+    <string name="word_no">NO</string>
+</resources>

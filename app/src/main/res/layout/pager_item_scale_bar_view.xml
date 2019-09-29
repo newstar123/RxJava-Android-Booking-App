@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/bar_detail_scale_image_progress"
+        style="@style/circle_material_progress_bar"/>
+
+    <ImageView
+        android:id="@+id/bar_detail_scale_broken_view"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:layout_gravity="center"
+        android:src="@drawable/inset_broken_resource"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/bar_detail_scale_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/bar_detail_scale_video_icon"
+        android:layout_width="34dip"
+        android:layout_height="43dip"
+        android:src="@drawable/inset_play_arrow"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</FrameLayout>

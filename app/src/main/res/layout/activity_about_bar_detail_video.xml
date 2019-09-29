@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about_bar_video_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:id="@+id/about_bar_video_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/about_bar_video_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@android:color/black"/>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/about_bar_video_progress"
+        style="@style/circle_material_progress_bar"/>
+
+    <ImageView
+        android:id="@+id/about_bar_play_video"
+        android:layout_width="62dip"
+        android:layout_height="71dip"
+        android:src="@drawable/inset_play_arrow"
+        android:layout_gravity="center"
+        android:padding="@dimen/dip14"
+        android:visibility="visible"/>
+
+</android.support.design.widget.CoordinatorLayout>

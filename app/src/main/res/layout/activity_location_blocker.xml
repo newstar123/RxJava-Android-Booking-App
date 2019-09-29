@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/location_blocker_root_layout">
+
+    <TextView
+        android:id="@+id/location_blocker_message"
+        style="@style/text_16_white_montserrat_light"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginTop="-5dp"
+        android:paddingEnd="@dimen/dip16"
+        android:paddingStart="@dimen/dip16"
+        android:layout_below="@id/location_blocker_title"
+        android:text="@string/location_blocker_text"/>
+
+    <TextView
+        android:id="@+id/location_blocker_title"
+        style="@style/text_16_white_montserrat_light"
+        android:textSize="@dimen/sp22"
+        android:layout_below="@id/location_bloker_image"
+        android:layout_centerHorizontal="true"
+        android:text="@string/oh_no"
+        android:paddingBottom="@dimen/dip12"/>
+
+    <FrameLayout
+        android:id="@+id/location_bloker_image"
+        android:layout_width="@dimen/dip120"
+        android:layout_height="@dimen/dip164"
+        android:layout_marginTop="@dimen/dip15"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="@dimen/dip113"
+            android:layout_height="@dimen/dip113"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/dip5"
+            android:src="@drawable/circle_cropped_block_location_screen"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/inset_location_blocker_screen"/>
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/location_blocker_enter_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip52"
+        android:layout_marginStart="@dimen/dip16"
+        android:layout_marginEnd="@dimen/dip16"
+        android:layout_marginTop="@dimen/dip10"
+        android:layout_marginBottom="@dimen/dip16"
+        android:gravity="center"
+        android:hint="@string/hint_email_address"
+        android:inputType="textEmailAddress"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textSize="@dimen/sp16"
+        android:fontFamily="@font/montserrat_regular"
+        android:background="@drawable/square_dark_blue"
+        android:layout_below="@id/location_blocker_message"/>
+
+    <TextView
+        android:id="@+id/invalid_email_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_blocker_enter_email"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/color_ff002d"
+        android:textSize="@dimen/sp10"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/location_blocker_share_email"
+        style="@style/bottom_verify_acc_buttons"
+        android:text="@string/button_share_email" />
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/email_verification_progressbar"
+        style="@style/general_material_progress_bar"/>
+
+</RelativeLayout>

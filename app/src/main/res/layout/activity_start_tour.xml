@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:attrs="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:background="@color/color_050D24">
+
+    <Button
+        android:id="@+id/start_tour_next_button"
+        style="@style/bottom_app_button_gradient"
+        android:text="@string/next"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/start_tour_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/start_tour_next_button"/>
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/start_tour_spring_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/start_tour_next_button"
+        android:layout_margin="@dimen/dip27"
+        app:piv_animationDuration="300"
+        app:piv_animationType="fill"
+        app:piv_interactiveAnimation="true"
+        app:piv_radius="@dimen/dip4"
+        app:piv_padding="@dimen/dip7"
+        attrs:piv_viewPager="@id/start_tour_view_pager"/>
+</RelativeLayout>

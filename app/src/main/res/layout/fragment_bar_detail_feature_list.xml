@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar_detail_feature_list"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/color_050D24"
+    android:scrollbars="vertical"/>

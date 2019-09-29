@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_B3050D24">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_margin="@dimen/dip25"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="@string/permission_access_reason"/>
+
+    <Button
+        android:id="@+id/initial_account_reason_button"
+        style="@style/bottom_app_button_blue"
+        android:text="@string/got_it"/>
+
+</RelativeLayout>

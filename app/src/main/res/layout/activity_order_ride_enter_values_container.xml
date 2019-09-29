@@ -1,0 +1,77 @@
+<RelativeLayout
+    android:id="@+id/enter_values_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/order_ride_information_section"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/root_order_ride_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dip8">
+
+        <ImageView
+            android:layout_width="@dimen/dip14"
+            android:layout_height="@dimen/dip17"
+            android:background="@drawable/icon_logo"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:id="@+id/order_ride_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dip18"
+            android:layout_marginEnd="@dimen/dip24"
+            android:drawableEnd="@drawable/inset_expand_hint_blue"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp14"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/order_ride_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dip12"
+        android:background="@null"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:hint="@string/hint_destination_address"
+        android:textColorHint="@android:color/white"
+        android:inputType="textNoSuggestions"
+        android:drawableStart="@drawable/inset_order_ride_address_name"
+        android:drawablePadding="@dimen/dip14"
+        android:fontFamily="@font/montserrat_medium"
+        android:selectAllOnFocus="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp14"
+        android:layout_below="@+id/separator_view" />
+
+    <View
+        android:id="@+id/separator_view"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/dip15"
+        android:background="@color/color_5b606f"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/dip35"
+        android:layout_marginBottom="@dimen/dip6"
+        android:layout_marginStart="@dimen/dip24"
+        android:visibility="visible"/>
+
+    <View
+        android:id="@+id/order_ride_address_divider_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip1"
+        android:layout_marginTop="@dimen/dip40"
+        android:layout_marginStart="@dimen/dip20"
+        android:layout_marginEnd="@dimen/dip20"
+        android:background="@color/color_5b606f"
+        android:layout_toEndOf="@+id/separator_view"
+        android:visibility="visible"/>
+
+</RelativeLayout>

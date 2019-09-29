@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_B3050D24">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dip25"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dip25"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:text="@string/time_to_update"
+            android:textSize="@dimen/sp26" />
+
+        <TextView
+            style="@style/text_16_white_montserrat_light"
+            android:gravity="center"
+            android:text="@string/time_to_update_message"
+            android:paddingBottom="@dimen/dip16"/>
+
+        <TextView
+            style="@style/text_16_white_montserrat_light"
+            android:gravity="center"
+            android:text="@string/time_to_update_submessage"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update_app_button"
+        style="@style/bottom_app_button_blue"
+        android:text="@string/got_it"/>
+
+</RelativeLayout>

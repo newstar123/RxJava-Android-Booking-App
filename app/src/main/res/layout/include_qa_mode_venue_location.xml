@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dip10"
+    android:background="@drawable/shape_qa_mode_card">
+
+    <FrameLayout
+        android:id="@+id/common_fake_venue_location_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_16_white_montserrat_light"
+            android:textStyle="bold"
+            android:paddingEnd="@dimen/dip42"
+            android:text="@string/qa_mode_fake_location_venue"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/fake_venue_location_switcher"
+            style="@style/wrap"
+            android:layout_gravity="end|center_vertical"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/fake_venue_location_expand_view"
+        style="@style/text_16_white"
+        android:text="@string/qa_mode_three_dots"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/common_fake_venue_location_settings"/>
+
+    <LinearLayout
+        android:id="@+id/additional_fake_venue_location_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/fake_venue_location_expand_view"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/fake_venue_location_variants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/dip16"
+            android:layout_marginEnd="@dimen/dip16">
+            <RadioButton
+                android:id="@+id/fake_venue_location_to_current_position"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip32"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_transparent"
+                android:text="@string/current_location"
+                android:textColor="@drawable/selector_tab_tip_text_color"
+                android:gravity="center"
+                android:button="@null"/>
+            <RadioButton
+                android:id="@+id/fake_venue_location_to_custom_position"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dip32"
+                android:layout_weight="1"
+                android:background="@drawable/selector_blue_transparent"
+                android:text="@string/custom_location"
+                android:textColor="@drawable/selector_tab_tip_text_color"
+                android:gravity="center"
+                android:button="@null"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/fake_venue_location_to_current_position_msg"
+            style="@style/text_14_montserrat_medium"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dip12"
+            android:text="@string/current_location_for_fake_venue_position_message"/>
+
+        <TextView
+            android:id="@+id/fake_venue_location_to_custom_position_msg"
+            style="@style/text_14_montserrat_medium"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dip12"
+            android:text="@string/custom_location_for_fake_venue_position_message"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/fake_venue_location_custom_latitude_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip44"
+            android:layout_margin="@dimen/dip10"
+            android:textColorHint="@color/color_828691"
+            android:background="@drawable/square_dark_blue"
+            style="@style/email_phone_verification"
+            android:hint="@string/latitude">
+
+            <EditText
+                android:id="@+id/fake_venue_location_custom_latitude_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/dip10"
+                android:paddingStart="@dimen/dip10"
+                android:gravity="start|center"
+                android:inputType="numberDecimal"
+                android:focusable="true"
+                android:textSize="@dimen/sp16"
+                android:fontFamily="@font/montserrat_regular"
+                android:background="@android:color/transparent"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/fake_venue_location_custom_longitude_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip44"
+            android:layout_margin="@dimen/dip10"
+            android:textColorHint="@color/color_828691"
+            android:background="@drawable/square_dark_blue"
+            style="@style/email_phone_verification"
+            android:hint="@string/longitude">
+
+            <EditText
+                android:id="@+id/fake_venue_location_custom_longitude_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/dip10"
+                android:paddingStart="@dimen/dip10"
+                android:gravity="start|center"
+                android:maxLines="1"
+                android:maxLength="22"
+                android:inputType="numberDecimal"
+                android:focusable="true"
+                android:textSize="@dimen/sp16"
+                android:fontFamily="@font/montserrat_regular"
+                android:background="@android:color/transparent"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/fake_venue_location_progress"
+        style="@style/circle_material_progress_bar"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</RelativeLayout>

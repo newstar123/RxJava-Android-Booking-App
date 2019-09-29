@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="window_background">#f5f5f5</color>
+    <color name="primary">#1A2348</color>
+    <color name="secondary">#11182D</color>
+    <color name="accent">#1bacdb</color>
+    <color name="bar_map_overlay_background">#991BACDB</color>
+    <color name="blueBackground">#050D24</color>
+    <color name="statusBarShade">#75050d25</color>
+    <color name="color_050d25">#050d25</color>
+    <color name="facebook_button_color">#3062d1</color>
+
+    <color name="tab_unselected_color">#484f61</color>
+    <color name="color_80FFFFFF">#80FFFFFF</color>
+
+    <color name="bpTransparentLine_background">#7fcccccc</color>
+    <color name="greyCode">#424242</color>
+    <color name="imageOpaque">#A0424242</color>
+
+    <color name="venue_near_to_close_background">#F5A623</color>
+    <color name="color_5b606f">#5b606f</color>
+
+    <color name="color_4D5b606f">#4D5b606f</color>
+
+    <color name="color_ff002d">#ff002d</color>
+
+    <color name="color_0e162d">#0e162d</color>
+
+    <color name="musicVenue">#C48037</color>
+    <color name="roofTop">#DA9C59</color>
+    <color name="sportsBar">#CCAC3B</color>
+    <color name="pub">#B3CB52</color>
+    <color name="neighborhood">#68BE68</color>
+    <color name="speakasy">#34B5A3</color>
+    <color name="beerGarden">#00ABDD</color>
+    <color name="cocktailBar">#405DDE</color>
+    <color name="gastroPub">#725EE7</color>
+    <color name="wineBar">#B473E6</color>
+    <color name="nightclub">#B048AC</color>
+    <color name="lounge">#902A8C</color>
+    <color name="checkout_discount">#82BA9A</color>
+    <color name="specialNotice">#D0D0021B</color>
+    <color name="uber_button_component">#123743</color>
+    <color name="uber_free_rounds_text">#10adac</color>
+    <color name="color_dark_blue">#B3050d25</color>
+    <color name="color_212121">#212121</color>
+    <color name="color_cecece">#cecece</color>
+    <color name="color_68be68">#68be68</color>
+    <color name="color_343434">#343434</color>
+    <color name="color_989898">#989898</color>
+    <color name="color_5953d1">#5953d1</color>
+    <color name="color_555555">#555555</color>
+    <color name="color_91908d">#91908d</color>
+    <color name="color_90_91908d">#E691908d</color>
+    <color name="color_11adac">#11adac</color>
+    <color name="color_80050d25">#80050d25</color>
+    <color name="color_123743">#123743</color>
+    <color name="color_777880">#777880</color>
+    <color name="color_70727b">#70727b</color>
+    <color name="color_7e7e7e">#7e7e7e</color>
+    <color name="color_01abdd">#01abdd</color>
+    <color name="color_494d5c">#494d5c</color>
+    <color name="color_303030">#303030</color>
+    <color name="color_f53365_ce">#f53365ce</color>
+
+    <color name="color_59ffffff">#59ffffff</color>
+    <color name="color_0c1426">#0c1426</color>
+    <color name="color_8a000000">#8a000000</color>
+    <color name="color_de000000">#de000000</color>
+    <color name="color_00b2de">#00b2de</color>
+    <color name="color_42619f">#42619f</color>
+    <color name="color_b3ffffff">#b3ffffff</color>
+    <color name="color_50_ffffff">#80ffffff</color>
+    <color name="color_99050D24">#99050D24</color>
+    <color name="color_80050D24">#80050D24</color>
+    <color name="color_CC050D24">#CC050D24</color>
+    <color name="color_B3050D24">#B3050D24</color>
+    <color name="color_13294c">#13294c</color>
+    <color name="color_F2050D24">#F2050D24</color>
+    <color name="color_757575">#757575</color>
+
+    <color name="color_050D24">#050D24</color>
+    <color name="color_d9cc0e13">#d9cc0e13</color>
+    <color name="color_cc0e13">#cc0e13</color>
+    <color name="color_AE68E2">#AE68E2</color>
+    <color name="color_828691">#828691</color>
+    <color name="color_123e4c">#123e4c</color>
+    <color name="color_dadada">#dadada</color>
+    <color name="color_00a9e3">#00a9e3</color>
+    <color name="color_51d767">#51d767</color>
+    <color name="color_ab68e2">#ab68e2</color>
+    <color name="color_75_ab68e2">#BFab68e2</color>
+    <color name="color_434343">#434343</color>
+    
+    <color name="textview_feedback_text_color">#363636</color>
+    <color name="blue_button_color">#33b5e5</color>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tab_summary_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dip5"
+        android:layout_marginBottom="@dimen/dip5"
+        android:layout_weight="1"/>
+
+    <View style="@style/divider_1_424242"/>
+
+    <FrameLayout style="@style/visible_tab_item_container">
+
+        <TextView
+            style="@style/text_16_white"
+            android:layout_gravity="center_vertical"
+            android:text="@string/free_drink_credit"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/tab_summary_free_drink"
+            style="@style/tab_cost_text_16_white"
+            android:textStyle="italic"/>
+    </FrameLayout>
+
+    <View style="@style/divider_1_424242"/>
+
+    <FrameLayout style="@style/visible_tab_item_container">
+
+        <TextView
+            style="@style/text_16_white"
+            android:layout_gravity="center_vertical"
+            android:text="@string/subtotal"/>
+
+        <TextView
+            android:id="@+id/tab_summary_subtotal_value"
+            style="@style/tab_cost_text_16_white"/>
+    </FrameLayout>
+
+    <FrameLayout style="@style/visible_tab_item_container">
+
+        <TextView
+            android:id="@+id/tab_summary_qorum_off"
+            style="@style/text_16_white"
+            android:layout_gravity="center_vertical"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/tab_summary_qorum_off_value"
+            style="@style/tab_cost_text_16_white"
+            android:textStyle="italic"/>
+
+    </FrameLayout>
+
+    <View style="@style/divider_1_424242"/>
+
+    <FrameLayout style="@style/visible_tab_item_container">
+
+        <TextView
+            style="@style/text_16_white"
+            android:layout_gravity="center_vertical"
+            android:text="@string/total"/>
+
+        <TextView
+            android:id="@+id/tab_summary_total_value"
+            style="@style/tab_cost_text_16_white"
+            android:textSize="20sp"/>
+    </FrameLayout>
+
+</LinearLayout>

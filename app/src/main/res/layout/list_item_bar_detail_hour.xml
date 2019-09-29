@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/list_item_bar_detail_work_day"
+        style="@style/text_16_white"
+        android:gravity="start"
+        android:textColor="@color/color_828691"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/list_item_bar_detail_work_time"
+        style="@style/text_16_white"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/color_828691"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/dip16"
+        android:gravity="end"/>
+
+    <TextView
+        android:id="@+id/list_item_bar_detail_work_type"
+        style="@style/text_12_white"
+        android:textStyle="italic"
+        android:layout_below="@id/list_item_bar_detail_work_time"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/dip16"
+        android:text="@string/closing_soon"
+        android:visibility="gone"/>
+
+</RelativeLayout>

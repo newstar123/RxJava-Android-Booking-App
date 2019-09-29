@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dip10"
+    android:background="@drawable/shape_qa_mode_card">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text_16_white_montserrat_light"
+            android:textStyle="bold"
+            android:paddingEnd="@dimen/dip42"
+            android:text="@string/qa_mode_custom_environment"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/environment_switcher"
+            style="@style/wrap"
+            android:layout_gravity="end|center_vertical"/>
+
+        <TextView
+            android:id="@+id/qa_mode_environment_expand_view"
+            style="@style/text_16_white"
+            android:text="@string/qa_mode_three_dots"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/dip16"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/qa_mode_environment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dip24"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/qa_mode_server_host"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip42"
+            android:layout_margin="@dimen/dip12" />
+
+        <Spinner
+            android:id="@+id/qa_mode_connection_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip42"
+            android:layout_margin="@dimen/dip12" />
+
+        <Spinner
+            android:id="@+id/qa_mode_server_host_root_urn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip42"
+            android:layout_margin="@dimen/dip12" />
+
+        <Button
+            android:id="@+id/qa_mode_apply_custom_environment"
+            style="@style/bottom_app_button_blue"
+            android:text="@string/apply"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/environment_progress"
+        style="@style/circle_material_progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

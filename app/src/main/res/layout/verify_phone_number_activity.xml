@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/verify_phone_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/verify_phone_number_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:elevation="@dimen/dip0"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/verify_phone_number_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/root_verify_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/submit_root_layout">
+
+        <TextView
+            android:id="@+id/text_verify_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dip145"
+            android:fontFamily="@font/montserrat_light"
+            android:gravity="center|bottom"
+            android:paddingEnd="@dimen/dip25"
+            android:paddingStart="@dimen/dip25"
+            android:text="@string/verify_account_by_phone"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp16" />
+
+        <EditText
+            android:id="@+id/phone_number_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip50"
+            android:layout_marginStart="@dimen/dip25"
+            android:layout_marginEnd="@dimen/dip25"
+            android:layout_marginTop="@dimen/dip25"
+            android:layout_below="@+id/text_verify_phone_number"
+            android:gravity="center"
+            android:hint="@string/hint_phone_number"
+            android:inputType="phone"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="@dimen/sp16"
+            android:fontFamily="@font/montserrat_regular"
+            android:background="@drawable/square_dark_blue"/>
+
+        <TextView
+            android:id="@+id/invalid_phone_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/invalid_phone_number"
+            android:textColor="@color/color_ff002d"
+            android:textSize="@dimen/sp10"
+            android:layout_marginTop="@dimen/dip8"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_below="@+id/phone_number_input"/>
+
+        <TextView
+            android:id="@+id/privacy_policy_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/submit_number_button"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dip12"
+            android:text="@string/view_policy"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/color_80FFFFFF"
+            android:textSize="@dimen/sp12" />
+
+        <Button
+            android:id="@+id/submit_number_button"
+            style="@style/bottom_verify_acc_buttons"/>
+
+    </RelativeLayout>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/phone_verification_progressbar"
+        style="@style/general_material_progress_bar"/>
+
+</android.support.design.widget.CoordinatorLayout>

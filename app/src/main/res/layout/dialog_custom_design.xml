@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_dialog_layout"
+    android:layout_width="@dimen/dip280"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:paddingTop="@dimen/dip18"
+    android:paddingBottom="@dimen/dip18"
+    android:background="@drawable/white_dialog_background">
+
+    <TextView
+        android:id="@+id/custom_dialog_title"
+        style="@style/match_wrap"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="@dimen/sp20"
+        android:textColor="@color/color_de000000"
+        android:gravity="start"
+        android:layout_marginStart="@dimen/dip18"
+        android:layout_marginEnd="@dimen/dip18"
+        android:layout_marginBottom="@dimen/dip15"
+        android:lineSpacingExtra="@dimen/sp6" />
+
+    <TextView
+        android:id="@+id/custom_dialog_message"
+        style="@style/match_wrap"
+        android:textColor="@color/color_8a000000"
+        android:textSize="@dimen/sp16"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="start"
+        android:layout_marginStart="@dimen/dip18"
+        android:layout_marginEnd="@dimen/dip18"
+        android:lineSpacingExtra="8sp" />
+
+    <TextView
+        android:id="@+id/custom_dialog_italic_message"
+        style="@style/match_wrap"
+        android:textSize="@dimen/sp12"
+        android:textColor="@color/color_8a000000"
+        android:lineSpacingExtra="6sp"
+        android:layout_marginStart="@dimen/dip15"
+        android:layout_marginEnd="@dimen/dip15"
+        android:layout_marginTop="@dimen/dip10"
+        android:fontFamily="@font/montserrat_italic"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/button_root_layout"
+        android:layout_marginTop="@dimen/dip27"
+        style="@style/match_wrap">
+
+        <TextView
+            android:id="@+id/custom_left_button"
+            android:layout_toStartOf="@+id/custom_right_button"
+            style="@style/CustomDialogButton"
+            android:clickable="true"
+            android:focusable="true"
+            android:enabled="true"
+            android:gravity="end|center"
+            android:layout_marginEnd="@dimen/dip35"/>
+
+        <TextView
+            android:id="@+id/custom_right_button"
+            android:layout_alignParentEnd="true"
+            style="@style/CustomDialogButton"
+            android:gravity="end|center"
+            android:layout_marginEnd="@dimen/dip25" />
+
+    </RelativeLayout>
+
+</LinearLayout>

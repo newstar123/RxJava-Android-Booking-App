@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_gift"
+        android:icon="@drawable/inset_icon_gift"
+        android:orderInCategory="100"
+        android:title="@string/refer_friends"
+        app:showAsAction="always"/>
+
+</menu>

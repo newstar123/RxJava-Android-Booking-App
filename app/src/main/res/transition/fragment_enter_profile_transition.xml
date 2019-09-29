@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="300"
+    android:interpolator="@android:interpolator/accelerate_decelerate">
+    <slide android:slideEdge="start"
+        android:duration="400"/>
+    <transitionSet
+        android:duration="3000"
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:startDelay="300">
+        <slide
+            android:slideEdge="bottom"/>
+        <targets>
+            <target android:targetId="@id/profile_image_first_name"/>
+            <target android:targetId="@id/profile_image_last_name"/>
+            <target android:targetId="@id/profile_image_age"/>
+            <target android:targetId="@id/profile_image_gender"/>
+            <target android:targetId="@id/profile_mail"/>
+            <target android:targetId="@id/profile_image_zip"/>
+            <target android:targetId="@id/profile_mobile_layout"/>
+            <target android:targetId="@id/updateProfileButton"/>
+        </targets>
+    </transitionSet>
+</transitionSet>

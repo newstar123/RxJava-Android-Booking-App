@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+       android:drawable="@drawable/svg_hexagon_white"
+    android:insetBottom="@dimen/dip5"
+    android:insetTop="@dimen/dip5"
+    android:insetLeft="@dimen/dip3"
+    android:insetRight="@dimen/dip3"/>

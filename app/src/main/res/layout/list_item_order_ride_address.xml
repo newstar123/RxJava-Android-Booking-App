@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/list_item_order_ride_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dip"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/inset_order_ride_address_name"/>
+    
+    <TextView
+        android:id="@+id/list_item_order_ride_primary"
+        android:layout_toEndOf="@+id/list_item_order_ride_icon"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:ellipsize="end"
+        android:layout_marginTop="15dip"
+        android:layout_marginStart="17dip"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/list_item_order_ride_secondary"
+        android:layout_below="@+id/list_item_order_ride_primary"
+        android:layout_toEndOf="@+id/list_item_order_ride_icon"
+        android:textColor="@color/color_777880"
+        android:layout_marginStart="17dip"
+        android:ellipsize="end"
+        android:layout_marginTop="1dip"
+        android:layout_marginBottom="16dip"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/list_item_order_ride_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_alignStart="@id/list_item_order_ride_secondary"
+        android:layout_below="@id/list_item_order_ride_secondary"
+        android:background="@color/greyCode"/>
+
+</RelativeLayout>

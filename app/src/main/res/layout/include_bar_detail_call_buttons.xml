@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar_detail_call_phone"
+    android:layout_width="match_parent"
+    android:layout_height="52dip"
+    android:layout_marginTop="@dimen/dip16"
+    android:layout_marginStart="@dimen/dip16"
+    android:layout_marginEnd="@dimen/dip16"
+    android:paddingBottom="@dimen/dip5"
+    android:padding="@dimen/dip14"
+    android:background="@drawable/blue_square">
+
+    <ImageView
+        android:id="@+id/bar_detail_phone_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/inset_call_white"/>
+
+    <TextView
+        style="@style/text_14_montserrat_medium"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/bar_detail_phone_icon"
+        android:layout_toRightOf="@id/bar_detail_phone_icon"
+        android:paddingStart="@dimen/dip14"
+        android:paddingLeft="@dimen/dip14"
+        android:text="@string/phone"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:id="@+id/bar_detail_phone"
+        style="@style/text_14_montserrat_medium"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/montserrat_regular"
+        android:visibility="gone"/>
+</RelativeLayout>

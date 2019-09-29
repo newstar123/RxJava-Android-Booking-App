@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_212121">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/settings_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:elevation="@dimen/dip0"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/settings_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@android:color/transparent"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:id="@+id/facebook_visibility_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip16">
+
+            <TextView
+                style="@style/text_16_white"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/facebook_visibility"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/facebook_visibility_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+        <View style="@style/divider_1_343434"/>
+
+        <RelativeLayout
+            android:id="@+id/auto_open_tab_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dip16">
+
+            <TextView
+                style="@style/text_16_white"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/auto_open_tab"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/auto_open_tab_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+        <View style="@style/divider_1_343434"/>
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/settings_progress"
+            style="@style/general_material_progress_bar"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/version"
+        style="@style/text_14_montserrat_medium"
+        android:layout_height="@dimen/dip56"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center"/>
+
+</android.support.design.widget.CoordinatorLayout>

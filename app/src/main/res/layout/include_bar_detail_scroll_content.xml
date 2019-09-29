@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:id="@+id/bar_detail_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_050D24"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dip65">
+
+    <include layout="@layout/include_bar_detail_photo"/>
+
+    <include layout="@layout/include_bar_detail_name"/>
+
+    <include layout="@layout/include_bar_detail_map"/>
+
+    <RelativeLayout
+        android:id="@+id/bar_detail_descriptions_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dip16"
+        android:paddingLeft="@dimen/dip16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/why_we_like_it"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="16sp"/>
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/bar_detail_descriptions_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dip5"
+            android:layout_marginRight="@dimen/dip16"
+            android:layout_marginEnd="@dimen/dip16"
+            app:piv_animationDuration="300"
+            app:piv_animationType="fill"
+            app:piv_interactiveAnimation="true"
+            attrs:piv_viewPager="@id/bar_detail_descriptions_view_pager"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/bar_detail_descriptions_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip210"
+            android:layout_marginTop="@dimen/dip25"/>
+    </RelativeLayout>
+
+    <include layout="@layout/include_bar_detail_call_buttons"/>
+
+    <include layout="@layout/include_bar_detail_list_details"/>
+
+    <include layout="@layout/include_bar_detail_menu"/>
+
+    <include layout="@layout/include_bar_detail_friends_table"/>
+
+</LinearLayout>

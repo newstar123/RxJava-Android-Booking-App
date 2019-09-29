@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/terms_invites_accepted"
+                android:layout_below="@id/terms_message">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="@dimen/dip15">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/invite_with_facebook"
+                android:layout_width="@dimen/dip52"
+                android:layout_height="@dimen/dip60"
+                android:layout_marginEnd="@dimen/dip60"
+                android:background="@drawable/selector_hexagon">
+
+                <ImageView
+                    android:id="@+id/white_fb_view"
+                    android:layout_width="@dimen/dip22"
+                    android:layout_height="@dimen/dip22"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_facebook"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/invite_with_email"
+                android:layout_width="@dimen/dip52"
+                android:layout_height="@dimen/dip60"
+                android:layout_marginBottom="@dimen/dip20"
+                android:layout_marginEnd="@dimen/dip60"
+                android:background="@drawable/selector_hexagon">
+
+                <ImageView
+                    android:id="@+id/white_email_view"
+                    android:layout_width="@dimen/dip26"
+                    android:layout_height="@dimen/dip22"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_email"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/invite_with_other"
+                android:layout_width="@dimen/dip52"
+                android:layout_height="@dimen/dip60"
+                android:background="@drawable/selector_hexagon">
+
+                <ImageView
+                    android:id="@+id/white_more_view"
+                    android:layout_width="@dimen/dip26"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_more"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dip20"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/invite_with_twitter"
+                android:layout_width="@dimen/dip52"
+                android:layout_height="@dimen/dip60"
+                android:layout_marginTop="@dimen/dip50"
+                android:layout_marginEnd="@dimen/dip60"
+                android:background="@drawable/selector_hexagon">
+
+                <ImageView
+                    android:id="@+id/white_twitter_view"
+                    android:layout_width="@dimen/dip45"
+                    android:layout_height="@dimen/dip45"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_twitter"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/invite_with_sms"
+                android:layout_width="@dimen/dip52"
+                android:layout_height="@dimen/dip60"
+                android:layout_marginTop="@dimen/dip50"
+                android:background="@drawable/selector_hexagon">
+
+                <TextView
+                    android:id="@+id/white_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/sms"
+                    android:textAllCaps="true"
+                    android:textColor="@color/selector_sms"
+                    android:textStyle="bold"/>
+            </FrameLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

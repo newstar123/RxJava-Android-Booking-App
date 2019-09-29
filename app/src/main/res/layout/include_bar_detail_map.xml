@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar_detail_map_content"
+    android:layout_width="match_parent"
+    android:layout_height="180dip"
+    android:padding="@dimen/dip16">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/bar_detail_map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/bar_detail_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_90_91908d"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dip10"
+        android:paddingEnd="@dimen/dip16"
+        android:paddingLeft="@dimen/dip16"
+        android:paddingRight="@dimen/dip16"
+        android:paddingStart="@dimen/dip16"
+        android:paddingTop="@dimen/dip10"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserrat_medium_italic"/>
+
+    <View
+        android:id="@+id/bar_detail_click_map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"/>
+
+</RelativeLayout>

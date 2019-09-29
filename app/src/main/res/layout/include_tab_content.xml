@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".delivering.component.tab.TabActivity">
+
+    <ImageView
+        android:id="@+id/scroll_top"
+        android:layout_width="@dimen/dip30"
+        android:layout_height="@dimen/dip30"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/svg_icon_arrow_top"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dip4"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/scroll_bottom"
+        android:layout_width="@dimen/dip30"
+        android:layout_height="@dimen/dip30"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/svg_icon_arrow_bottom"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dip4"
+        android:layout_above="@+id/bottom_view_line"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/order_recycler_view"
+        android:layout_marginEnd="@dimen/dip22"
+        android:layout_marginStart="@dimen/dip16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never"/>
+
+    <View
+        android:id="@+id/bottom_view_line"
+        style="@style/divider_1_5b606f"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dip16"
+        android:layout_marginEnd="@dimen/dip16"/>
+
+</RelativeLayout>

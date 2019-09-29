@@ -1,0 +1,33 @@
+<LinearLayout
+    android:id="@+id/order_ride_advert_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:elevation="@dimen/dip8"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/order_ride_advert"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip120"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip18"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp10"
+        android:gravity="center"
+        android:text="@string/brought_to_you_by_qorum"
+        android:background="@drawable/shape_00a9e3_51d767"/>
+
+    <ImageView
+        android:id="@+id/uber_back_button"
+        android:layout_width="@dimen/dip56"
+        android:layout_height="@dimen/dip56"
+        android:padding="@dimen/dip16"
+        android:src="@drawable/inset_arrow_back_black"/>
+</LinearLayout>

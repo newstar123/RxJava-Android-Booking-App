@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingTop="@dimen/dip14"
+    android:paddingStart="@dimen/dip16"
+    android:paddingEnd="@dimen/dip16">
+
+    <RelativeLayout
+        android:id="@+id/profile_image_first_name"
+        style="@style/EditProfileRelativeLStyle">
+
+        <TextView
+            android:id="@+id/input_first_name"
+            style="@style/EditProfileStyle"
+            android:text="@string/first_name">
+        </TextView>
+
+        <ImageView
+            style="@style/center_vertical_end_16_view"
+            android:background="@drawable/inset_fb_circular"/>
+
+        <View style="@style/divider_1_bottom_4D5b606f"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_image_last_name"
+        style="@style/EditProfileRelativeLStyle">
+
+        <TextView
+            android:id="@+id/input_last_name"
+            style="@style/EditProfileStyle"
+            android:text="@string/last_name">
+        </TextView>
+
+        <ImageView
+            style="@style/center_vertical_end_16_view"
+            android:background="@drawable/inset_fb_circular"/>
+
+        <View style="@style/divider_1_bottom_4D5b606f"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_image_age"
+        style="@style/EditProfileRelativeLStyle">
+
+        <TextView
+            android:id="@+id/profile_birthday"
+            style="@style/EditProfileStyle"
+            android:text="@string/birth_date"/>
+
+        <ImageView
+            style="@style/center_vertical_end_16_view"
+            android:background="@drawable/inset_fb_circular"/>
+
+        <View style="@style/divider_1_bottom_4D5b606f"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_image_gender"
+        style="@style/EditProfileRelativeLStyle">
+
+        <Spinner
+            android:id="@+id/profile_gender"
+            style="@style/EditProfileStyle"
+            android:text="@string/gender"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:id="@+id/gender_fb_mark"
+            style="@style/center_vertical_end_16_view"
+            android:background="@drawable/inset_fb_circular"/>
+
+        <View style="@style/divider_1_bottom_4D5b606f"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_image_zip"
+        style="@style/EditProfileRelativeLStyle">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_zip_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/input_zip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:background="@android:color/transparent"
+                android:maxLength="5"
+                android:hint="@string/hint_zip_code"
+                android:textColorHint="@android:color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp16"
+                android:enabled="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View android:id="@+id/error_view"
+            style="@style/CustomErrorViewStyle"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_mail"
+        android:clickable="true"
+        android:focusable="true"
+        style="@style/EditProfileRelativeLStyle">
+
+        <TextView
+            android:id="@+id/zip_error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp10"
+            android:text="@string/re_enter_zip_code"
+            android:paddingTop="@dimen/dip5"
+            android:visibility="visible"
+            android:textColor="@color/selector_error_zip_colors" />
+        
+        <TextView
+            android:id="@+id/input_mail"
+            style="@style/EditProfileStyle"
+            android:text="@string/mail">
+        </TextView>
+
+        <View style="@style/divider_1_bottom_4D5b606f"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_mobile_layout"
+        style="@style/EditProfileRelativeLStyle">
+
+        <TextView
+            android:id="@+id/input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/dip5"
+            android:textColorHint="@android:color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@android:color/white"
+            android:text="@string/number"
+            android:textSize="@dimen/sp16"
+            android:gravity="center|start"/>
+
+        <View style="@style/divider_1_bottom_4D5b606f"/>
+
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/updateProfileButton"
+        android:layout_marginTop="@dimen/dip35"
+        android:text="@string/update"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="@dimen/sp16"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/dip265"
+        android:layout_height="@dimen/dip35"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/transparent_square_with_stroke"/>
+
+</LinearLayout>

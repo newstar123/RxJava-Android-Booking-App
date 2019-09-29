@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_212121">
+
+    <include
+        android:id="@+id/profile_appbar"
+        layout="@layout/include_profile_app_bar" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/change_photo_floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dip20"
+        android:clickable="true"
+        android:elevation="@dimen/dip5"
+        android:src="@drawable/inset_photo_white"
+        app:backgroundTint="@color/color_68be68"
+        app:fabSize="normal"
+        app:layout_anchor="@id/profile_appbar"
+        app:layout_anchorGravity="bottom|right|end"
+        android:visibility="gone"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true">
+
+        <include layout="@layout/include_profile_fields"/>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/profile_progress"
+        style="@style/general_material_progress_bar"
+        android:layout_alignParentTop="true"/>
+
+</android.support.design.widget.CoordinatorLayout>

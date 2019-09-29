@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="@dimen/dip23"
+            android:layout_height="@dimen/dip23"
+            android:layout_marginStart="@dimen/dip16"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/inset_arrow_back"/>
+
+        <TextView
+            android:id="@+id/logging_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dip16"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/color_80FFFFFF"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/navigation_logout" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/drawer_header_photo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip270"
+        android:layout_below="@+id/navigation_bar">
+
+        <ImageView
+            android:id="@+id/drawer_header_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="@dimen/dip24"
+            android:layout_height="@dimen/dip24"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="@dimen/dip15"
+            android:layout_marginEnd="@dimen/dip21"
+            android:background="@drawable/inset_photo_white"/>
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/update_photo_progress"
+            android:layout_gravity="center"
+            style="@style/circle_material_progress_bar"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="@dimen/dip24"
+            android:layout_height="@dimen/dip24"
+            android:layout_marginBottom="-12dip"
+            android:layout_gravity="center_horizontal|bottom"
+            android:src="@drawable/layer_up_gradient_triangle"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip55"
+        android:layout_below="@+id/drawer_header_photo_layout"
+        android:background="@drawable/shape_00a9e3_51d767"
+        android:paddingStart="@dimen/dip15"
+        android:paddingEnd="@dimen/dip9">
+
+        <LinearLayout
+            style="@style/wrap"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/drawer_header_name"
+                style="@style/wrap"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp16"
+                android:fontFamily="@font/montserrat_medium" />
+
+            <TextView
+                android:id="@+id/drawer_header_number"
+                style="@style/wrap"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="@dimen/sp12"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/dip44"
+            android:layout_height="@dimen/dip48"
+            android:background="@drawable/inset_hexagon_transparent">
+
+            <ImageView
+                android:layout_width="@dimen/dip24"
+                android:layout_height="@dimen/dip24"
+                android:layout_gravity="center"
+                android:background="@drawable/svg_icon_updated_check_in"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

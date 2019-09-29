@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/verify_code_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/color_212121">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/verification_code_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:elevation="@dimen/dip0"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/verification_code_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/root_verification_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@+id/submit_root_layout">
+
+        <TextView
+            android:id="@+id/text_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dip120"
+            android:fontFamily="@font/montserrat_light"
+            android:gravity="center"
+            android:paddingEnd="@dimen/dip25"
+            android:paddingStart="@dimen/dip25"
+            android:text="@string/verify_code_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp16" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/verification_code_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip50"
+            android:layout_marginStart="@dimen/dip25"
+            android:layout_marginEnd="@dimen/dip25"
+            android:layout_marginTop="@dimen/dip30"
+            android:textColorHint="@color/color_828691"
+            android:background="@drawable/square_dark_blue"
+            style="@style/email_phone_verification"
+            android:layout_below="@+id/text_verification_code">
+
+            <EditText
+                android:id="@+id/verification_code_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/dip10"
+                android:gravity="center"
+                android:inputType="number"
+                android:focusable="true"
+                android:textSize="@dimen/sp16"
+                android:fontFamily="@font/montserrat_regular"
+                android:background="@android:color/transparent"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/invalid_code_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_ff002d"
+            android:textSize="@dimen/sp10"
+            android:layout_marginTop="@dimen/dip10"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:textAllCaps="true"
+            android:layout_below="@+id/verification_code_layout"/>
+
+        <Button
+            android:id="@+id/submit_code_button"
+            style="@style/bottom_verify_acc_buttons" />
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/resend_verification_code_progress"
+            style="@style/circle_material_progress_bar"
+            android:layout_width="@dimen/dip52"
+            android:layout_height="@dimen/dip52"
+            android:layout_above="@id/submit_code_button"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/resend_verification_code_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_above="@id/submit_code_button"
+            android:textSize="@dimen/sp12"
+            android:padding="@dimen/dip16"
+            android:textColor="@color/color_80FFFFFF"
+            android:fontFamily="@font/montserrat_regular"
+            android:textAllCaps="true"
+            android:enabled="false"/>
+
+    </RelativeLayout>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/code_verification_progressbar"
+        style="@style/general_material_progress_bar"/>
+
+</android.support.design.widget.CoordinatorLayout>

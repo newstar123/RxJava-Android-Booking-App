@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar_detail_description"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:enabled="false"
+    android:fontFamily="@font/montserrat_regular"
+    android:lineSpacingExtra="6sp"
+    android:paddingBottom="@dimen/dip7"
+    android:paddingTop="@dimen/dip10"
+    android:textColor="@drawable/selector_bar_detail_description_color"
+    android:textSize="14sp" />

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bar_detail_app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_CC050D24">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bar_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:background="@android:color/transparent" >
+
+        <RelativeLayout
+            android:id="@+id/bar_detail_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/bar_detail_back_button"
+                android:layout_width="@dimen/dip60"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:duplicateParentState="true"
+                android:src="@drawable/inset_arrow_back" />
+
+            <TextView
+                android:id="@+id/bar_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/bar_detail_back_button"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dip10"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/montserrat_medium"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageButton
+                android:id="@+id/bar_detail_invite"
+                android:layout_width="@dimen/dip60"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/dip16"
+                android:src="@drawable/inset_bar_detail_invite" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bar_detail_expand_photos_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/bar_detail_expand_back"
+                android:layout_width="@dimen/dip60"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:duplicateParentState="true"
+                android:src="@drawable/inset_x_white" />
+
+            <TextView
+                android:id="@+id/bar_detail_expand_photos_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/bar_detail_expand_back"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dip10"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/montserrat_medium"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageButton
+                android:id="@+id/bar_detail_expand_grid"
+                android:layout_width="@dimen/dip60"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/dip16"
+                android:src="@drawable/inset_grid" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/bar_detail_progress"
+        style="@style/general_material_progress_bar" />
+
+</android.support.design.widget.AppBarLayout>

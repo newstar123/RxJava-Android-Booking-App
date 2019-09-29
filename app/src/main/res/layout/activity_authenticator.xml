@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 android:id="@+id/main_container"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+    <include layout="@layout/include_splash_screen"/>
+
+    <RelativeLayout
+        android:id="@+id/login_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/dip12">
+
+        <RelativeLayout
+            android:id="@+id/facebook_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dip52"
+            android:padding="@dimen/dip14"
+            android:background="@color/color_42619f">
+
+            <View
+                android:layout_width="@dimen/dip24"
+                android:layout_height="@dimen/dip24"
+                android:background="@drawable/inset_icon_facebook_white"/>
+
+            <TextView
+                android:id="@+id/login_with"
+                style="@style/text_14_white"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/sign_up"
+                android:paddingLeft="@dimen/dip75"
+                android:paddingStart="@dimen/dip75"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                style="@style/text_14_white"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/login_with"
+                android:layout_toEndOf="@id/login_with"
+                android:paddingLeft="@dimen/dip5"
+                android:paddingStart="@dimen/dip5"
+                android:textStyle="bold"
+                android:text="@string/facebook"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/continue_as_guest"
+            style="@style/wrap"
+            android:layout_marginTop="@dimen/dip10"
+            android:layout_below="@id/facebook_sign_up"
+            android:layout_centerHorizontal="true"
+            android:padding="10dip"
+            android:textColor="@color/color_989898"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/continue_as_guest"/>
+
+    </RelativeLayout>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progress"
+        style="@style/circle_material_progress_bar"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/dip26"
+        android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dip16"
+    android:layout_marginStart="@dimen/dip16">
+
+    <LinearLayout
+        android:id="@+id/tab_tips_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/tip_variants_group"
+            android:layout_width="@dimen/dip0"
+            android:layout_height="@dimen/dip30"
+            android:layout_weight="3"
+            android:background="@color/blueBackground"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/min_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/selector_tab_tip_background"
+                android:button="@drawable/selector_tab_tip_background"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="@string/_18"
+                android:textColor="@drawable/selector_tab_tip_text_color" />
+
+            <RadioButton
+                android:id="@+id/middle_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/selector_tab_tip_background"
+                android:button="@drawable/selector_tab_tip_background"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="@string/_20"
+                android:textColor="@drawable/selector_tab_tip_text_color" />
+
+            <RadioButton
+                android:id="@+id/max_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/selector_tab_tip_background"
+                android:button="@drawable/selector_tab_tip_background"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="@string/_25"
+                android:textColor="@drawable/selector_tab_tip_text_color" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/custom_tip_value"
+            style="@style/text_16_white"
+            android:layout_width="@dimen/dip0"
+            android:layout_height="@dimen/dip30"
+            android:layout_weight="1"
+            android:background="@color/blueBackground"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:hint="@string/custom"
+            android:inputType="numberDecimal"
+            android:clickable="true"
+            android:focusable="true"
+            android:minWidth="@dimen/dip55" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_totals_container"
+        android:layout_width="190dip"
+        android:layout_height="@dimen/dip65"
+        android:layout_below="@id/tab_tips_container"
+        android:paddingEnd="@dimen/dip19"
+        android:paddingStart="@dimen/dip19"
+        android:layout_marginBottom="@dimen/dip3"
+        android:layout_marginTop="@dimen/dip3">
+
+        <TextView
+            android:id="@+id/tab_totals_tip_value"
+            style="@style/text_14_montserrat_medium"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dip2" />
+
+        <TextView
+            android:id="@+id/tab_totals_qorum_discount_value"
+            style="@style/text_14_montserrat_medium"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tab_totals_tip_value"
+            android:layout_marginBottom="@dimen/dip3"
+            android:layout_marginTop="@dimen/dip3" />
+
+        <TextView
+            android:id="@+id/tab_totals_qorum_discount"
+            style="@style/text_14_montserrat_light"
+            android:layout_alignBaseline="@id/tab_totals_qorum_discount_value" />
+<!--
+        <TextView
+            android:id="@+id/tab_totals_tip"
+            style="@style/text_14_montserrat_light"
+            android:layout_alignBaseline="@id/tab_totals_tip_value"
+            android:layout_alignEnd="@id/tab_totals_qorum_discount"
+            android:layout_toStartOf="@+id/tab_totals_tip_value"
+            android:text="@string/tip_with_dots" />
+-->
+        <TextView
+            android:id="@+id/tab_totals_tax_value"
+            style="@style/text_14_montserrat_medium"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tab_totals_qorum_discount_value" />
+
+        <TextView
+            android:id="@+id/tab_totals_tax"
+            style="@style/text_14_montserrat_light"
+            android:layout_marginRight="@dimen/dip2"
+            android:layout_alignBaseline="@id/tab_totals_tax_value"
+            android:layout_alignEnd="@id/tab_totals_qorum_discount"
+            android:text="@string/tax_with_dots" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_totals"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip65"
+        android:layout_below="@id/tab_tips_container"
+        android:layout_toEndOf="@id/tab_totals_container"
+        android:layout_marginBottom="@dimen/dip2">
+
+        <View
+            android:layout_width="@dimen/dip1"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dip6"
+            android:background="@color/color_5b606f" />
+
+        <TextView
+            android:id="@+id/tab_totals_total"
+            style="@style/text_14_montserrat_light"
+            android:layout_marginStart="@dimen/dip19"
+            android:layout_marginTop="@dimen/dip4"
+            android:text="@string/total_with_dots" />
+
+        <TextView
+            android:id="@+id/tab_totals_total_value"
+            style="@style/text_14_montserrat_medium"
+            android:layout_alignStart="@id/tab_totals_total"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/sp30" />
+    </RelativeLayout>
+
+</RelativeLayout>

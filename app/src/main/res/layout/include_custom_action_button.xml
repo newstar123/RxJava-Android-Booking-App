@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.delivering.component.bar.detail.action.CustomBottomActionButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar_detail_action_button"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dip60"
+    android:paddingStart="@dimen/dip16"
+    android:paddingLeft="@dimen/dip16"
+    android:paddingRight="@dimen/dip16"
+    android:paddingEnd="@dimen/dip16"
+    android:layout_marginStart="@dimen/dip16"
+    android:layout_marginEnd="@dimen/dip16"
+    android:layout_marginBottom="@dimen/dip12"
+    android:layout_gravity="bottom">
+
+    <ImageView
+        android:id="@+id/bar_detail_action_button_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/bar_detail_action_button_uber_text"
+        style="@style/text_12_white"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_gravity="center_vertical|end"
+        android:gravity="end"
+        android:text="@string/counting"/>
+
+    <TextView
+        android:id="@+id/bar_detail_action_button_title_text"
+        style="@style/text_14_white"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+</app.delivering.component.bar.detail.action.CustomBottomActionButton>

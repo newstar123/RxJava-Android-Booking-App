@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_item_bar_swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_00a9e3_51d767_vertical_gradient"
+    app:gravity="right">
+
+    <app.delivering.mvp.bars.list.init.text.VerticalTextView
+        android:id="@+id/bar_item_swiped_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:singleLine="true"
+        android:textSize="@dimen/sp14"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/dip12"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/bar_item_swiped_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dip18"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="@dimen/dip14"
+        android:layout_marginBottom="@dimen/dip16"
+        android:src="@drawable/inset_open_tab"/>
+
+</RelativeLayout>

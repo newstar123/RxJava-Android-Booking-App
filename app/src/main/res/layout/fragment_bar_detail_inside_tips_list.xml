@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar_detail_inside_tips_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_050D24">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bar_detail_inside_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scrollbars="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/bar_detail_inside_tips_drink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/bar_detail_inside_tips"
+        android:paddingTop="@dimen/dip8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_whattodrink"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/bar_detail_inside_tips_drink_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/color_828691"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bar_detail_inside_tips_crowd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/bar_detail_inside_tips_drink"
+        android:paddingTop="@dimen/dip8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_crowd"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/bar_detail_inside_tips_crowd_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/color_828691"/>
+    </LinearLayout>
+
+</RelativeLayout>

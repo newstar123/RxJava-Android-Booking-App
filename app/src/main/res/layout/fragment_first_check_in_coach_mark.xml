@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_check_in_coach_mark_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/color_F2050D24">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="@dimen/dip24"
+        android:layout_height="@dimen/dip24"
+        android:background="@drawable/inset_white_cross"
+        android:layout_marginTop="@dimen/dip15"
+        android:layout_marginStart="@dimen/dip18"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/first_check_in_coach_mark_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp16"
+        android:fontFamily="@font/montserrat_light"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dip141"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:text="@string/first_check_in_coach_message"/>
+
+</RelativeLayout>

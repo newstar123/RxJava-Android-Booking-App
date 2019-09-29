@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar_detail_menu_container"
+    android:layout_width="match_parent"
+    android:layout_height="68dip"
+    android:layout_margin="@dimen/dip16"
+    android:background="@drawable/shape_white_stroke_rectangle">
+
+    <ImageView
+        android:id="@+id/bar_detail_menu_image"
+        android:layout_width="@dimen/dip52"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:src="@drawable/inset_feature_menu"/>
+
+    <TextView
+        android:id="@+id/bar_detail_menu_title"
+        style="@style/text_14_white"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/bar_detail_menu_image"
+        android:layout_toRightOf="@id/bar_detail_menu_image"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/view_menu"
+        android:textAllCaps="true"/>
+
+    <LinearLayout
+        android:id="@+id/bar_detail_served_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dip16"
+        android:layout_marginEnd="@dimen/dip16"
+        android:gravity="right|end"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/bar_detail_menu_served"
+            style="@style/text_12_montserrat_medium"
+            android:textColor="@android:color/white"
+            android:text="@string/servedFrom"/>
+
+        <TextView
+            android:id="@+id/bar_detail_menu_time"
+            style="@style/text_12_montserrat_medium"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

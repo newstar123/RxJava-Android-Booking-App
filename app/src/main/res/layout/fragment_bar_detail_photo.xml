@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/bar_detail_item_broken_view"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/inset_broken_resource"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/bar_detail_item_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:id="@+id/bar_detail_item_video_player_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:visibility="gone">
+
+                <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                    android:id="@+id/bar_detail_item_video_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/promo_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dip75"
+                    android:paddingTop="@dimen/dip5"
+                    android:paddingBottom="@dimen/dip5"
+                    android:paddingStart="@dimen/dip12"
+                    android:paddingEnd="@dimen/dip12"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:elevation="@dimen/dip5"
+                    android:textSize="10sp"
+                    android:textColor="@android:color/white"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:background="@drawable/promotion_background"/>
+
+                <ImageView
+                    android:id="@+id/bar_detail_item_play_video"
+                    android:layout_width="@dimen/dip64"
+                    android:layout_height="@dimen/dip64"
+                    android:background="@drawable/inset_play_arrow"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dip14"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/bar_detail_expand_video"
+                    android:layout_width="@dimen/dip20"
+                    android:layout_height="@dimen/dip20"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="@dimen/dip10"
+                    android:layout_marginRight="@dimen/dip18"
+                    android:layout_marginEnd="@dimen/dip18"
+                    android:background="@drawable/inset_expand"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/bar_detail_video_time_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="@dimen/dip16"
+                    android:paddingLeft="@dimen/dip16"
+                    android:paddingBottom="@dimen/dip14"
+                    android:textSize="10sp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/bar_detail_item_image_progress"
+            style="@style/circle_material_progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_network_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_CC050D24">
+
+    <ImageView
+        android:id="@+id/icon_no_connection"
+        android:layout_width="@dimen/dip48"
+        android:layout_height="@dimen/dip48"
+        android:background="@drawable/inset_nosignal"
+        android:layout_below="@+id/splash_screen_logo"
+        android:layout_marginTop="@dimen/dip30"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dip10"/>
+
+    <ImageView
+        android:id="@+id/splash_screen_logo"
+        android:layout_centerHorizontal="true"
+        style="@style/splash_style"/>
+
+    <TextView
+        android:id="@+id/warning_no_connection"
+        android:layout_width="@dimen/dip265"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_no_connection"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="@dimen/sp14"
+        android:textColor="@color/color_828691"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/internet_error"/>
+
+</RelativeLayout>

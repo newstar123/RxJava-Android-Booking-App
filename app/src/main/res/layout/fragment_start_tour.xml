@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_050D24"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/start_tour_fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip33"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp26"/>
+
+    <TextView
+        android:id="@+id/start_tour_fragment_message"
+        android:layout_width="@dimen/dip275"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dip8"
+        android:fontFamily="@font/montserrat_light"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp16"/>
+
+    <ImageView
+        android:id="@+id/start_tour_fragment_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dip34"
+        android:layout_marginBottom="@dimen/dip64"
+        android:scaleType="centerInside"/>
+
+</LinearLayout>

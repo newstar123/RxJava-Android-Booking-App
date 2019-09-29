@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_coach_mark_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/color_F2050D24">
+
+    <ImageView
+        android:id="@+id/profile_coach_lick_navigation"
+        android:layout_width="@dimen/dip24"
+        android:layout_height="@dimen/dip24"
+        tools:ignore="ContentDescription"
+        android:background="@drawable/inset_account_white"
+        android:layout_marginTop="@dimen/dip15"
+        android:layout_marginStart="@dimen/dip18"/>
+
+    <ImageView
+        android:id="@+id/blue_arrow"
+        android:layout_width="@dimen/dip137"
+        android:layout_height="@dimen/dip182"
+        android:layout_toEndOf="@id/profile_coach_lick_navigation"
+        android:layout_marginStart="@dimen/dip10"
+        android:layout_marginTop="@dimen/dip25"
+        android:layout_marginBottom="@dimen/dip10"
+        android:background="@drawable/svg_icon_blue_arrow"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp16"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/profile_coach_message" />
+
+    <Button
+        android:id="@+id/got_it_button"
+        style="@style/text_14_white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip52"
+        android:fontFamily="@font/montserrat_medium"
+        android:background="@drawable/blue_button_corner_5_background"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dip16"
+        android:layout_marginEnd="@dimen/dip16"
+        android:layout_marginBottom="@dimen/dip5"
+        android:text="@string/got_it"/>
+
+</RelativeLayout>

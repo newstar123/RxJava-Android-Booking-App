@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bar_detail_photos_transition"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip324"
+        android:scaleType="centerCrop"
+        android:transitionName="@string/bar_detail_photo_transition"/>
+
+    <app.delivering.component.bar.detail.adapter.pager.ViewPagerWithBlocking
+        android:id="@+id/bar_detail_photos_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dip324"
+        android:background="@color/color_050D24"
+        android:clickable="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:focusable="true" />
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/bar_detail_photos_spring_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dip"
+        app:piv_animationDuration="300"
+        app:piv_animationType="worm"
+        app:piv_interactiveAnimation="true"
+        attrs:piv_viewPager="@id/bar_detail_photos_view_pager"/>
+
+</FrameLayout>

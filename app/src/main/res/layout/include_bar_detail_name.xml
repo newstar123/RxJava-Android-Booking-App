@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar_detail_name_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_050D24"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dip16"
+    android:paddingEnd="@dimen/dip20"
+    android:paddingLeft="@dimen/dip20"
+    android:paddingRight="@dimen/dip20"
+    android:paddingStart="@dimen/dip20"
+    android:paddingTop="@dimen/dip16">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dip5">
+
+        <TextView
+            android:id="@+id/bar_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dip100"
+            android:layout_marginEnd="@dimen/dip100"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:transitionName="@string/bar_detail_name_transition" />
+
+        <TextView
+            android:id="@+id/bar_detail_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|right"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="22sp"
+            android:transitionName="@string/bar_detail_discount_transition" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bar_detail_type_indicator"
+            android:layout_width="14dip"
+            android:layout_height="14dip"
+            android:layout_alignParentTop="true"
+            android:paddingTop="2dip"
+            android:src="@drawable/inset_bar_type_indicator"
+            android:transitionName="@string/bar_detail_type_indicator_transition" />
+
+        <TextView
+            android:id="@+id/bar_detail_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dip16"
+            android:layout_marginStart="@dimen/dip16"
+            android:textAllCaps="true"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:transitionName="@string/bar_detail_type_transition" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dip9"
+            android:layout_marginStart="@dimen/dip9"
+            android:layout_toEndOf="@id/bar_detail_type"
+            android:layout_toRightOf="@id/bar_detail_type">
+
+            <TextView
+                android:id="@+id/bar_detail_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|right"
+                android:gravity="end|right"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:fontFamily="@font/montserrat_light"
+                android:transitionName="@string/bar_detail_route_transition" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

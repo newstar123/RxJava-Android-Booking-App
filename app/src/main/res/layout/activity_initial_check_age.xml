@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_050D24">
+
+    <TextView
+        android:id="@+id/check_age_title"
+        style="@style/text_16_white"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dip32"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_light"
+        android:paddingTop="@dimen/dip141"
+        android:text="@string/initial_check_age_title" />
+
+    <LinearLayout
+        android:id="@+id/editable_age_text"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dip16"
+        android:layout_marginEnd="@dimen/dip16"
+        android:paddingTop="@dimen/dip12"
+        android:paddingBottom="@dimen/dip10"
+        android:layout_below="@id/check_age_title"
+        android:background="@drawable/dark_button_background">
+
+        <TextView
+            android:id="@+id/editable_age_month"
+            android:text="@string/calendar_month"
+            style="@style/age_picker_style" />
+
+        <TextView
+            style="@style/text_22_gray"
+            android:text="@string/slash"/>
+
+        <TextView
+            android:id="@+id/editable_age_day"
+            android:text="@string/calendar_day"
+            style="@style/age_picker_style" />
+
+        <TextView
+            style="@style/text_22_gray"
+            android:text="@string/slash"/>
+
+        <TextView
+            android:id="@+id/editable_age_year"
+            android:text="@string/calendar_year"
+            style="@style/age_picker_style" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_16_white"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/dip32"
+        android:text="@string/initial_check_age_reason"
+        android:layout_below="@id/editable_age_text"
+        android:fontFamily="@font/montserrat_medium"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/initial_check_age_button"
+        style="@style/bottom_app_button_gradient"
+        android:text="@string/let_me_in"/>
+
+</RelativeLayout>

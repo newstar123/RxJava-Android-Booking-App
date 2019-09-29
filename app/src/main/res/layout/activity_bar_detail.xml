@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_212121">
+
+    <include layout="@layout/include_bar_detail_app_bar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/bar_detail_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_bar_detail_scroll_content"/>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/include_custom_action_button"/>
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/bar_detail_root_progressbar"
+        style="@style/general_material_progress_bar"/>
+</android.support.design.widget.CoordinatorLayout>
